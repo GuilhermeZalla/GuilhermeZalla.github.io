@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/GuilhermeZalla.github.io/static/css/main.aeb93e6c.css",
+    "main.js": "/GuilhermeZalla.github.io/static/js/main.5afc4d88.js",
+    "static/js/787.a2cb61a6.chunk.js": "/GuilhermeZalla.github.io/static/js/787.a2cb61a6.chunk.js",
+    "static/media/brand-todoapp.svg": "/GuilhermeZalla.github.io/static/media/brand-todoapp.a6b774cf54e2015d16de3190c0ee74fc.svg",
+    "static/media/brand-yelpcam.svg": "/GuilhermeZalla.github.io/static/media/brand-yelpcam.dfc7d3d6586d5d0b85fbd69bbefff090.svg",
+    "static/media/brand-meetminas.svg": "/GuilhermeZalla.github.io/static/media/brand-meetminas.10542aab10af1876447f5c11d253205c.svg",
+    "static/media/skills.svg": "/GuilhermeZalla.github.io/static/media/skills.7b92d8903bde427a697b.svg",
+    "static/media/contact.svg": "/GuilhermeZalla.github.io/static/media/contact.70c0bb9c29e1a37508e3.svg",
+    "static/media/brand-spacetourism.svg": "/GuilhermeZalla.github.io/static/media/brand-spacetourism.4813a0ab4da848b3947d627aca1a09f5.svg",
+    "static/media/brand-rocketexpress.svg": "/GuilhermeZalla.github.io/static/media/brand-rocketexpress.e0a7325f87590a3d679bd761c723f65f.svg",
+    "static/media/brand-sneakers.svg": "/GuilhermeZalla.github.io/static/media/brand-sneakers.5ac0304ff13b4455061e99d8609905fe.svg",
+    "static/media/wo.svg": "/GuilhermeZalla.github.io/static/media/wo.72f5a0f18e3a80cf8e6d.svg",
+    "static/media/about.svg": "/GuilhermeZalla.github.io/static/media/about.7ca0b792fdc85c1b2e2d.svg",
+    "index.html": "/GuilhermeZalla.github.io/index.html",
+    "main.aeb93e6c.css.map": "/GuilhermeZalla.github.io/static/css/main.aeb93e6c.css.map",
+    "main.5afc4d88.js.map": "/GuilhermeZalla.github.io/static/js/main.5afc4d88.js.map",
+    "787.a2cb61a6.chunk.js.map": "/GuilhermeZalla.github.io/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aeb93e6c.css",
+    "static/js/main.5afc4d88.js"
+  ]
+}
