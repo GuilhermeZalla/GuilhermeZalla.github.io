@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b3a06b5.css",
-    "main.js": "/static/js/main.f6e32dc4.js",
+    "main.css": "/static/css/main.146d80b8.css",
+    "main.js": "/static/js/main.d8e38ea2.js",
     "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
     "static/media/brand-todoapp.svg": "/static/media/brand-todoapp.a6b774cf54e2015d16de3190c0ee74fc.svg",
     "static/media/brand-yelpcam.svg": "/static/media/brand-yelpcam.dfc7d3d6586d5d0b85fbd69bbefff090.svg",
+    "static/media/contact-cover.svg": "/static/media/contact-cover.77fcbf55b0a6083f2ea181a6bab1ffec.svg",
     "static/media/brand-meetminas.svg": "/static/media/brand-meetminas.10542aab10af1876447f5c11d253205c.svg",
     "static/media/skills.svg": "/static/media/skills.7b92d8903bde427a697b.svg",
     "static/media/contact.svg": "/static/media/contact.70c0bb9c29e1a37508e3.svg",
@@ -12,14 +13,15 @@
     "static/media/brand-rocketexpress.svg": "/static/media/brand-rocketexpress.e0a7325f87590a3d679bd761c723f65f.svg",
     "static/media/brand-sneakers.svg": "/static/media/brand-sneakers.5ac0304ff13b4455061e99d8609905fe.svg",
     "static/media/wo.svg": "/static/media/wo.72f5a0f18e3a80cf8e6d.svg",
+    "static/media/brand-whereintheworld.svg": "/static/media/brand-whereintheworld.92e65ac75852371885a617b1507296e6.svg",
     "static/media/about.svg": "/static/media/about.7ca0b792fdc85c1b2e2d.svg",
     "index.html": "/index.html",
-    "main.1b3a06b5.css.map": "/static/css/main.1b3a06b5.css.map",
-    "main.f6e32dc4.js.map": "/static/js/main.f6e32dc4.js.map",
+    "main.146d80b8.css.map": "/static/css/main.146d80b8.css.map",
+    "main.d8e38ea2.js.map": "/static/js/main.d8e38ea2.js.map",
     "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b3a06b5.css",
-    "static/js/main.f6e32dc4.js"
+    "static/css/main.146d80b8.css",
+    "static/js/main.d8e38ea2.js"
   ]
 }
