@@ -1,11 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.402c541f.css",
-    "main.js": "/static/js/main.da87e79b.js",
+    "main.js": "/static/js/main.77c49bbf.js",
     "static/js/787.47f23282.chunk.js": "/static/js/787.47f23282.chunk.js",
     "static/media/profile_picutre.png": "/static/media/profile_picutre.bafdf7cf46929152f756.png",
     "static/media/whatsapp-bg.png": "/static/media/whatsapp-bg.bded4f44087fb4e89252.png",
-    "static/media/Currículo Guilherme Zalla.pdf": "/static/media/Currículo Guilherme Zalla.311213e1e0759bce564b.pdf",
     "static/media/logo.svg": "/static/media/logo.56b4bae18c4a532fe5f67847e7da8a73.svg",
     "static/media/whatsapp-icon.svg": "/static/media/whatsapp-icon.2757b6f25bc69391c928c2510206798d.svg",
     "static/media/chrome.svg": "/static/media/chrome.ce3595c1739679a41be839d6547db9e0.svg",
@@ -23,11 +22,11 @@
     "static/media/github.svg": "/static/media/github.b1b97d69dee05e70deb798ca0eb5f2d5.svg",
     "static/media/code.svg": "/static/media/code.e73a52d03210fd1cf1e8478a5f84d05e.svg",
     "main.402c541f.css.map": "/static/css/main.402c541f.css.map",
-    "main.da87e79b.js.map": "/static/js/main.da87e79b.js.map",
+    "main.77c49bbf.js.map": "/static/js/main.77c49bbf.js.map",
     "787.47f23282.chunk.js.map": "/static/js/787.47f23282.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.402c541f.css",
-    "static/js/main.da87e79b.js"
+    "static/js/main.77c49bbf.js"
   ]
 }
