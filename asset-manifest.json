@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.358d1d7a.css",
-    "main.js": "/static/js/main.2d61b91a.js",
+    "main.css": "/static/css/main.45fb153f.css",
+    "main.js": "/static/js/main.eeb919b4.js",
     "static/js/787.47f23282.chunk.js": "/static/js/787.47f23282.chunk.js",
     "static/media/profile_picutre.png": "/static/media/profile_picutre.bafdf7cf46929152f756.png",
     "static/media/whatsapp-bg.png": "/static/media/whatsapp-bg.bded4f44087fb4e89252.png",
@@ -22,12 +22,12 @@
     "static/media/mark.svg": "/static/media/mark.586ea8a148c5e4a132d3354a0c35bc76.svg",
     "static/media/github.svg": "/static/media/github.b1b97d69dee05e70deb798ca0eb5f2d5.svg",
     "static/media/code.svg": "/static/media/code.e73a52d03210fd1cf1e8478a5f84d05e.svg",
-    "main.358d1d7a.css.map": "/static/css/main.358d1d7a.css.map",
-    "main.2d61b91a.js.map": "/static/js/main.2d61b91a.js.map",
+    "main.45fb153f.css.map": "/static/css/main.45fb153f.css.map",
+    "main.eeb919b4.js.map": "/static/js/main.eeb919b4.js.map",
     "787.47f23282.chunk.js.map": "/static/js/787.47f23282.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.358d1d7a.css",
-    "static/js/main.2d61b91a.js"
+    "static/css/main.45fb153f.css",
+    "static/js/main.eeb919b4.js"
   ]
 }
