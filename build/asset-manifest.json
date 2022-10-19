@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fe2ca3c0.css",
+    "main.js": "/static/js/main.329e8189.js",
+    "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
+    "static/media/profile.png": "/static/media/profile.bafdf7cf46929152f756.png",
+    "static/media/modal_bg.png": "/static/media/modal_bg.bded4f44087fb4e89252.png",
+    "static/media/CV Guilherme Zalla.pdf": "/static/media/CV Guilherme Zalla.ba67e84343038af9c900.pdf",
+    "static/media/logo.svg": "/static/media/logo.56b4bae18c4a532fe5f67847e7da8a73.svg",
+    "static/media/mouse.svg": "/static/media/mouse.6f5e2a1043b1675e51db003b8f81db20.svg",
+    "index.html": "/index.html",
+    "main.fe2ca3c0.css.map": "/static/css/main.fe2ca3c0.css.map",
+    "main.329e8189.js.map": "/static/js/main.329e8189.js.map",
+    "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe2ca3c0.css",
+    "static/js/main.329e8189.js"
+  ]
+}
