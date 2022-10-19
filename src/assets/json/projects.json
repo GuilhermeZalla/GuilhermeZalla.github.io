@@ -1,0 +1,81 @@
+{
+    "projects":[
+        {
+            "id": 1,
+            "name": "NEXTGAME",
+            "type": "e-commerce",
+            "url": "https://nextgame-ecommerce.netlify.app/",
+            "thumbnail": "https://i.imgur.com/ZDRxiYA.png"
+        },
+        {
+            "id": 2,
+            "name": "MOVIESLIB",
+            "type": "portal",
+            "url": "https://react-movieslib.netlify.app/",
+            "thumbnail": "https://i.imgur.com/cWUMlHS.png"
+        },
+        {
+            "id": 3,
+            "name": "WINDBNB",
+            "type": "portal",
+            "url": "https://windbnb-gz.netlify.app/",
+            "thumbnail": "https://i.imgur.com/wm976aw.png"
+        },
+        {
+            "id": 4,
+            "name": "WHERE IN THE WORLD?",
+            "type": "web app",
+            "url": "https://whereintheworldcountries.netlify.app/",
+            "thumbnail": "https://i.imgur.com/YAwdWAb.jpg"
+        },
+        {
+            "id": 5,
+            "name": "TODO APP",
+            "type": "web app",
+            "url": "https://whereintheworldcountries.netlify.app/",
+            "thumbnail": "https://i.imgur.com/QfIG6fi.jpg"
+        },
+        {
+            "id": 6,
+            "name": "TODO APP",
+            "type": "e-commerce",
+            "url": "https://rocketexpress.netlify.app/",
+            "thumbnail": "https://i.imgur.com/9pN8o2P.jpg"
+        },
+        {
+            "id": 7,
+            "name": "CHAT APP ILLUSTRATION",
+            "type": "banner",
+            "url": "",
+            "thumbnail": "https://i.imgur.com/xpJWDmt.jpg"
+        },
+        {
+            "id": 8,
+            "name": "SNAP",
+            "type": "landing page",
+            "url": "https://snap-remote-work-gz.netlify.app/",
+            "thumbnail": "https://i.imgur.com/hV1eaZu.jpg"
+        },
+        {
+            "id": 9,
+            "name": "WEATHER WEB APP",
+            "type": "web app",
+            "url": "https://react-weather-app-gz.netlify.app/",
+            "thumbnail": "https://i.imgur.com/WoC9rqm.jpg"
+        },
+        {
+            "id": 10,
+            "name": "DIAGNÓSTICO PLUS",
+            "type": "app",
+            "url": "https://www.figma.com/proto/3DxlpDsspk8DwI4goTXAzE/Diagn%C3%B3stico-Plus?node-id=186%3A279&scaling=scale-down&page-id=0%3A1&starting-point-node-id=186%3A279",
+            "thumbnail": "https://i.imgur.com/xUxP9pE.png"
+        },
+        {
+            "id": 11,
+            "name": "DIAGNÓSTICO PLUS LOGO",
+            "type": "logo",
+            "url": "https://www.figma.com/proto/3DxlpDsspk8DwI4goTXAzE/Diagn%C3%B3stico-Plus?node-id=186%3A279&scaling=scale-down&page-id=0%3A1&starting-point-node-id=186%3A279",
+            "thumbnail": "https://i.imgur.com/E93mAqe.png"
+        }
+    ]
+}

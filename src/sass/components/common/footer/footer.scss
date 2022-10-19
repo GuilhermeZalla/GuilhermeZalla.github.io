@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+.footer{
+    background-color: $clr-elements-bg;
+    padding: 5px 15px 10px 15px;
+    flex-basis: 10%;
+    position: relative;
+    .footer__btn{
+        float: right;
+        margin-bottom: 0;
+        background-color: $clr-primary;
+        box-shadow: 1px 3px 9px 0px #00000066;
+        padding: 7px 7px 3px 7px;
+        border-radius: 50px;
+        &>svg{
+            color: $clr-elements-bg;
+            font-size: 1.9rem;
+            pointer-events: none;
+        }
+    }
+    .modal{
+        background-color: $clr-elements-bg;
+        box-shadow: 2px 2px 12px 0px #0000006b;
+        position: absolute;
+        top: -240px;
+        right: 25px;
+        font-family: $fnt-modal;
+        border-radius: 8px;
+        display: none;
+        .modal__header{
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+            @include flex(flex, flex-start, flex-start, none, row, 15px);
+            background-color: $clr-primary;
+            color: $clr-elements-bg;
+            padding: 12px;
+            position: relative;
+            .modal__article{
+                line-height: .6cm;
+                .modal__title{
+                    font-weight: bold;
+                    font-size: .90rem;
+                }
+                .modal__subtitle{
+                    font-size: .80rem;
+                    font-weight: 400;
+                }
+            }
+            &>svg{
+                font-size: 2.3rem;
+            }
+            &>button{
+                position: absolute;
+                right: 4px;
+                top: 4px;
+                &>svg{
+                    font-size: 1.3rem;
+                    color: $clr-elements-bg;
+                }
+            }
+        }
+        .modal__body{
+            padding: 15px 12px;
+            .modal__list{
+                @include flex(flex, none, none, none, column, 5px);
+                background-color: $clr-elements-bg;
+                padding: 10px;
+                border-radius: 8px;
+                width: 160px;
+                .modal__item{
+                    font-size: .90rem;
+                    &:first-child{
+                        color: #868686;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .modal__footer{
+            @include flex(flex, center, center, none, none, 0);
+            padding: 12px 20px;
+            width: 100%;
+            .modal__link{
+                @include flex(inherit, center, center, none, row, 10px);
+                background-color: $clr-primary;
+                color: $clr-elements-bg;
+                text-decoration: none;
+                width: 100%;
+                border-radius: 20px;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        .modal {
+            width: 220px;
+            top: -270px;
+            right: 15px;
+        }
+    }
+}

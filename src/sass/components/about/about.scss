@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+.about {
+    @include flex(flex, center, center, none, column, 15px);
+    position: relative;
+
+    .about__section {
+        padding: 0 10px;
+
+        &:first-child {
+            text-align: center;
+            padding: 390px 0;
+
+            &>h1 {
+                margin-bottom: 10px;
+            }
+
+        }
+
+        &:nth-child(2) {
+            @include flex(flex, flex-start, flex-start, none, row, 30px);
+            margin-bottom: 120px;
+
+            figure {
+                width: 140px;
+                position: relative;
+
+                &::before {
+                    content: 'ABOUT';
+                    position: absolute;
+                    top: -30px;
+                    font-size: 1rem;
+                    box-shadow: inset 0 -5px 0px 0px #ff184e;
+                }
+
+                img {
+                    @include img(100%, 100%, 100%, 100%, cover, block);
+                    border-radius: 50px;
+                }
+            }
+
+            .about__article {
+                @include flex(flex, flex-start, flex-start, none, column, 25px);
+
+                .about__paragraph {
+                    line-height: .7cm;
+                    font-size: 1rem;
+                }
+            }
+
+            .about__list {
+                width: 100%;
+                margin-top: 15px;
+                -webkit-columns: 3;
+                column-count: 3;
+                font-size: .9em;
+                line-height: .5cm;
+                margin: 1em 0;
+
+                .about__item {
+                    color: $clr-primary;
+                    font-size: .95rem;
+                    margin-bottom: 15px;
+
+                    &>span {
+                        color: $clr-secondary;
+                    }
+                }
+            }
+
+            .about__btn {
+                text-decoration: none;
+                border: 2px solid $clr-primary;
+                font-weight: 700;
+                color: $clr-primary;
+                padding: 10px 25px;
+                background: linear-gradient(90deg, $clr-primary 50%, transparent 0);
+                background-size: 200% 100%;
+                background-position: 100% 100%;
+                transition: all .7s ease-out;
+
+                &:hover {
+                    background-position: bottom left;
+                    color: $clr-elements-bg;
+                }
+            }
+        }
+
+        .about__list-skills {
+            margin-top: 30px;
+            position: relative;
+            &::before {
+                content: 'MY SPECIALIZATIONS';
+                position: absolute;
+                top: -50px;
+                font-size: 1rem;
+                box-shadow: inset 0 -5px 0px 0px #ff184e;
+            }
+            &>li {
+                border-bottom: 3px solid hsla(0, 0%, 54%, .295);
+                font-size: 1.1em;
+                margin-bottom: 2.5em;
+                padding-bottom: 10px;
+                position: relative;
+
+                span {
+                    border-bottom: 3px solid $clr-primary;
+                    bottom: -10%;
+                    left: 0;
+                    padding: 10px;
+                    position: absolute;
+                    &::after{
+                        bottom: 50%;
+                        position: absolute;
+                        right: 0;
+                    }
+                    &[data-name=html] {
+                        right: 10%;
+                    &::after {
+                        content: "90%";
+                    }
+                    }
+                    &[data-name=scss]{
+                        right: 0;
+                    }
+                    &[data-name=js]{
+                        right: 20%;
+                        &::after {
+                            content: "80%";
+                        }
+                    }
+                    &[data-name=node]{
+                        right: 30%;
+                        &::after {
+                            content: "70%";
+                        }
+                    }
+                    &[data-name=react]{
+                        right: 20%;
+                        &::after {
+                            content: "80%";
+                        }
+                    }
+                    &[data-name=figma]{
+                        right: 0;
+                    }
+                    &[data-name=mongo]{
+                        right: 30%;
+                        &::after {
+                            content: "70%";
+                        }
+                    }
+                }
+            }
+        }
+
+        &:last-child{
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            grid-template-rows: auto;
+            justify-content: space-between;
+            gap: 60px;
+            width: 100%;
+            position: relative;
+            margin-top: 120px;
+            &::before {
+                content: 'MY SERVICES AND WHAT I CARE MOST';
+                position: absolute;
+                top: -50px;
+                left: 12px;
+                font-size: 1rem;
+                box-shadow: inset 0 -5px 0px 0px #ff184e;
+            }
+            .about__article{
+                @include flex(flex, flex-start, flex-start, none, column, 20px);
+                span{
+                    @include flex(flex, none, center, none, none, 10px);
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+                svg{
+                    color: $clr-primary;
+                    font-size: 1.6rem;
+                }
+                p{
+                    font-size: .90rem;
+                    line-height: .6cm;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px){
+    .about {
+        .about__section {
+            padding: 0 20px;
+
+            &:nth-child(2) {
+                @include flex(flex, center, center, none, column, 30px);
+
+                figure {
+                    width: 120px;
+                    &::before {
+                        left: 35px;
+                    }
+
+                    img {
+                        border-radius: 100%;
+                    }
+                }
+
+                .about__article {
+                    @include flex(flex, center, flex-start, none, column, 25px);
+
+                    .about__paragraph {
+                        line-height: .8cm;
+                    }
+                }
+
+                .about__list {
+                    -webkit-columns: 1;
+                    column-count: 1;
+                }
+            }
+
+            &::before {
+                line-height: .6cm;
+            }
+
+            .about__list-skills {
+                margin-top: 0;
+            }
+
+            &:last-child{
+                grid-template-columns: repeat(1, 2fr);
+                margin-top: 70px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px){
+    .about {
+        .about__section {
+            padding: 0 30px;
+
+            &:nth-child(2) {
+                @include flex(flex, center, center, none, column, 30px);
+
+                figure {
+                    width: 120px;
+                    &::before {
+                        left: 35px;
+                    }
+
+                    img {
+                        border-radius: 100%;
+                    }
+                }
+
+                .about__article {
+                    @include flex(flex, center, flex-start, none, column, 25px);
+
+                    .about__paragraph {
+                        line-height: .8cm;
+                    }
+                }
+
+                .about__list {
+                    margin-top: 20px;
+                    -webkit-columns: 2;
+                    column-count: 2;
+                }
+
+                .about__btn {
+                    font-size: .95rem;
+                    margin-top: 15px;
+                }
+            }
+
+            .about__list-skills {
+                margin-top: 20px;
+            }
+
+            &:last-child{
+                grid-template-columns: repeat(2, 2fr);
+                margin-top: 90px;
+            }
+        }
+    }
+}

@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+.portfolio {
+    @include flex(flex, center, center, none, column, 15px);
+    position: relative;
+
+    .portfolio__section {
+        padding: 0 10px;
+
+        .portfolio__title {
+            font-size: 2.8rem;
+            margin-bottom: 5px;
+        }
+
+        .portfolio__subtitle {
+            margin-left: 5px;
+        }
+
+        &:first-child {
+            padding: 300px 0 180px 10px;
+
+        }
+
+        &:last-child {
+            padding: 0;
+            position: relative;
+
+            &::before {
+                content: 'RECENT WORKS';
+                position: absolute;
+                top: -10px;
+                left: 10px;
+                font-size: 1rem;
+                box-shadow: inset 0 -5px 0px 0px #ff184e;
+            }
+        }
+
+        .portfolio__list {
+            @include flex(flex, flex-start, center, none, row, 15px);
+            margin: 40px 5px;
+
+            button {
+                font-size: .80rem;
+            }
+        }
+
+        .current {
+            color: $clr-primary;
+        }
+
+        .portfolio__container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 2fr));
+            gap: 25px;
+            padding: 0 25px 30px 25px;
+
+            .portfolio__article {
+                text-align: center;
+                text-transform: uppercase;
+                position: relative;
+                box-shadow: 0 0 12px 1px #0000003d;
+                padding: 15px;
+                transition: all 200ms ease-in-out;
+
+                figure {
+                    position: relative;
+                    height: 100%;
+                    img {
+                        @include img(100%, 100%, 100%, 100%, cover, block);
+                    }
+                }
+
+                &>span {
+                    @include flex(flex, center, center, row, none, 0);
+                    background-color: rgba(0, 0, 0, 0.715);
+                    position: absolute;
+                    top: 15px;
+                    bottom: 15px;
+                    right: 15px;
+                    left: 15px;
+                    transition: all 200ms ease-in-out;
+                    transform: scale(0%);
+
+                    .portfolio__project-link {
+                        @include flex(inherit, flex-start, center, row, none, 3px);
+                        text-decoration: none;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        color: $clr-primary;
+
+                        &>svg {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+                &:hover {
+                    transform: scale(110%);
+                    & span {
+                        transform: scale(100%);
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 580px){
+    .portfolio{
+        .portfolio__section {
+            .portfolio__container{
+                grid-template-columns: repeat(1, 2fr);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px){
+    .portfolio{
+        .portfolio__section {
+            .portfolio__title{
+                font-size: 2.6rem;
+            }
+
+            &:first-child {
+                padding: 380px 0 120px 10px;
+            }
+
+            .portfolio__list{
+                @include flex(flex, flex-start, center, none, row, 15px);
+                flex-wrap: wrap;
+            }
+
+            .portfolio__container{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 2fr);
+                gap: 20px;
+                .portfolio__article{
+                    .portfolio__project-title{
+                        margin: 15px 0 10px 0;
+                        font-size: .90rem;
+                    }
+                    .portfolio__project-link{
+                        line-height: .7cm;
+                        font-size: .95rem;
+                    }
+                }
+            }
+        }
+    }
+}
