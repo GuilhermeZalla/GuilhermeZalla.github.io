@@ -80,16 +80,16 @@ export const About = () => {
                     <section className="about__section">
                         <figure><img src={Picture} alt="It's me!" /></figure>
                         <article className="about__article">
-                            <p className="about__paragraph">Hello, I'm a front-end junior developer with more than 2 years of experience, located in São Paulo, Brazil.</p>
+                            <p className="about__paragraph">Hello, I'm a FullStack developer with more than 4 years of experience, located in Minas Gerais, Brazil.</p>
                             <p className="about__paragraph">I develop attractive designs that come to life using transitions and animations that meet a client's necessary requirements and the most sophisticated technologies available today for fully interactive and responsive websites.</p>
                             <p className="about__paragraph">I'm passionate about the power of colors and shapes in developing a great new design, and Javascript offers endless fascinating possibilities to create the right solution for companies all over the world.</p>
                             <p className="about__paragraph">I'm open for any new opportunities and challegens!</p>
                             <ul className="about__list">
                                 <li className="about__item">Name: <span>Guilherme Zalla</span></li>
-                                <li className="about__item">City: <span>São Paulo</span></li>
-                                <li className="about__item">Age: <span>23 Years Old</span></li>
+                                <li className="about__item">City: <span>Minas Gerais</span></li>
+                                <li className="about__item">Age: <span>26 Years Old</span></li>
                                 <li className="about__item">State: <span>São Paulo</span></li>
-                                <li className="about__item">Specialization: <span>Web Developer</span></li>
+                                <li className="about__item">Specialization: <span>FullStack Developer</span></li>
                                 <li className="about__item">E-mail: <span>zallaguilherme@gmail.com</span></li>
                             </ul>
                             <a href={require("../../assets/pdf/CV Guilherme Zalla.pdf")} role="button" className="about__btn">Download CV</a>
@@ -130,7 +130,7 @@ export const About = () => {
                     <section className="about__section">
                         <article className="about__article">
                             <span><FaHtml5 /> Front-end</span>
-                            <p>I've been developing for 2 years with modern frameworks and resources</p>
+                            <p>I've been developing for 4 years with modern frameworks and resources</p>
                         </article>
                         <article className="about__article">
                             <span><FaTabletAlt /> Responsive Layouts</span>
@@ -146,7 +146,7 @@ export const About = () => {
                         </article>
                         <article className="about__article">
                             <span><BsCode /> Progamming</span>
-                            <p>I'm a Javascript/React developer</p>
+                            <p>I'm a TypeScript/React developer</p>
                         </article>
                         <article className="about__article">
                             <span><TiSupport /> Support</span>
@@ -158,4 +158,5 @@ export const About = () => {
             <Footer />
         </>
     );
+
 };
