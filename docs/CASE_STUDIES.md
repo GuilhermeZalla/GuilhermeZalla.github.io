@@ -8,7 +8,7 @@ Um estudo de caso explica, de forma curta, o que o projeto resolve e como foi co
 - Quatro projetos escolhidos pelo usuário: Saldoa, PixelRank, Sneakers Store e MoviesLib.
 - Anos confirmados pelo autor: Saldoa (2025), PixelRank (2026), Sneakers Store (2024) e MoviesLib (2026).
 - Imagens reais fornecidas pelo usuário, guardadas localmente. Saldoa usa um quadro estático do GIF, com uma versão PNG preservada e WebP para entrega.
-- Contatos confirmados, nova foto local e currículo atual em docs/mockups/Currículo_Guilherme_Zalla.pdf.
+- Contatos confirmados, nova foto local e currículo atual em docs/curriculo/Curriculo_Guilherme_Zalla_PT-BR.pdf.
 - Descrições fornecidas anteriormente para Saldoa e PixelRank; os novos projetos foram descritos a partir de seus READMEs atuais.
 
 ## Conteúdo publicado nesta etapa

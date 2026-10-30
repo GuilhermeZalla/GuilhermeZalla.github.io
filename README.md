@@ -155,7 +155,7 @@ As rotas `/#/projects`, `/#/about`, `/#/stack` e `/#/contact` levam às seções
 | Textos gerais em português e inglês | [src/i18n/pt.json](src/i18n/pt.json) e [src/i18n/en.json](src/i18n/en.json) |
 | Cores, tipografia e layout | [src/style/site.css](src/style/site.css) |
 
-A foto atual é colorida e local. O currículo é importado de `docs/mockups/Currículo_Guilherme_Zalla.pdf` para o build. E-mail, LinkedIn e WhatsApp são links para os canais do autor; o site não recebe nem armazena mensagens. Next Game e Nova Geração ficam em `src/data/archived-projects.js` para possível revisão futura.
+A foto atual é colorida e local. O currículo é importado de `docs/curriculo/Curriculo_Guilherme_Zalla_PT-BR.pdf` para o build. A pasta `docs/curriculo` contém somente quatro arquivos atuais: português e inglês, cada um em PDF e DOCX, com layout em duas colunas, lateral azul e sem foto. E-mail, LinkedIn e WhatsApp são links para os canais do autor; o site não recebe nem armazena mensagens. Next Game e Nova Geração ficam em `src/data/archived-projects.js` para possível revisão futura.
 
 ## Fluxo de demonstração
 

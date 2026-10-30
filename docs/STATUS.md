@@ -79,7 +79,7 @@ Os protótipos usam a foto e o PDF locais. Imagens dos novos projetos, anos e li
 - Saldoa, PixelRank, Sneakers Store e MoviesLib substituem a seleção anterior; Next Game e Nova Geração ficam preservados em src/data/archived-projects.js.
 - As quatro imagens fornecidas foram baixadas e otimizadas em arquivos locais. O GIF do Saldoa foi convertido em um quadro estático, sem GIF no site.
 - A nova foto foi salva localmente; profile.png e profile.webp antigos foram removidos. Referências dos protótipos e do componente antigo foram ajustadas.
-- Currículo atual importado de docs/mockups/Currículo_Guilherme_Zalla.pdf.
+- Currículo atual importado de docs/curriculo/Curriculo_Guilherme_Zalla_PT-BR.pdf. Layout atualizado com lateral azul, fundo branco e mais espaço entre os tópicos, sem foto ou projetos. A pasta docs/curriculo contém somente quatro arquivos: português e inglês, cada um em PDF e DOCX; versões anteriores visual e ATS removidas. PDFs conferidos em A4, com uma página, texto selecionável e links clicáveis.
 - Quatro rotas de estudo de caso com estrutura aprovada, índice navegável, imagens ampliáveis e conteúdo EN/PT. Código na entrada principal e imagem antecipada nas visitas diretas para reduzir a cascata de carregamento.
 - Home ligada aos estudos de caso. Título e descrição acompanham a página no navegador.
 - Conteúdo escrito a partir das descrições fornecidas e dos READMEs atuais, sem experiências inventadas. Fontes e limites em CASE_STUDIES.md.

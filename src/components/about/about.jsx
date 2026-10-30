@@ -1,7 +1,7 @@
 import { Footer } from "../common/footer/footer";
 import { Header } from "../common/header/header";
 import Picture from "../../assets/images/portrait.webp";
-import curriculumUrl from "../../../docs/mockups/Currículo_Guilherme_Zalla.pdf";
+import curriculumUrl from "../../../docs/curriculo/Curriculo_Guilherme_Zalla_PT-BR.pdf";
 import { FaHtml5, FaTabletAlt } from "react-icons/fa";
 import { BsSearch, BsCode } from "react-icons/bs";
 import { TiSupport } from "react-icons/ti";
