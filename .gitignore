@@ -1,0 +1,9 @@
+node_modules/
+dist/
+build/
+.vite/
+.npm-cache/
+.asset-work/
+coverage/
+*.local
+.DS_Store

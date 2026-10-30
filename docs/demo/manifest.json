@@ -1,0 +1,260 @@
+{
+  "source": "Local production build, Microsoft Edge / Playwright",
+  "screenshots": [
+    {
+      "file": "docs/screenshots/home-desktop.png",
+      "width": 1440,
+      "fullPage": false,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/home-desktop-full.png",
+      "width": 1440,
+      "fullPage": true,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/projects-desktop.png",
+      "width": 1440,
+      "fullPage": false,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/header-contact-desktop.png",
+      "width": 1440,
+      "fullPage": false,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/home-desktop-dark.png",
+      "width": 1440,
+      "fullPage": false,
+      "theme": "dark",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/home-desktop-dark-full.png",
+      "width": 1440,
+      "fullPage": true,
+      "theme": "dark",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/case-saldoa-desktop.png",
+      "width": 1440,
+      "fullPage": false,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/case-saldoa-desktop-full.png",
+      "width": 1440,
+      "fullPage": true,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/case-pixelrank-desktop.png",
+      "width": 1440,
+      "fullPage": false,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/case-pixelrank-desktop-full.png",
+      "width": 1440,
+      "fullPage": true,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/case-sneakers-desktop.png",
+      "width": 1440,
+      "fullPage": false,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/case-sneakers-desktop-full.png",
+      "width": 1440,
+      "fullPage": true,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/case-movieslib-desktop.png",
+      "width": 1440,
+      "fullPage": false,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/case-movieslib-desktop-full.png",
+      "width": 1440,
+      "fullPage": true,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/home-mobile.png",
+      "width": 390,
+      "fullPage": false,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/home-mobile-full.png",
+      "width": 390,
+      "fullPage": true,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/projects-mobile.png",
+      "width": 390,
+      "fullPage": false,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/header-contact-mobile.png",
+      "width": 390,
+      "fullPage": false,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/home-mobile-dark.png",
+      "width": 390,
+      "fullPage": false,
+      "theme": "dark",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/home-mobile-dark-full.png",
+      "width": 390,
+      "fullPage": true,
+      "theme": "dark",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/case-saldoa-mobile.png",
+      "width": 390,
+      "fullPage": false,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/case-saldoa-mobile-full.png",
+      "width": 390,
+      "fullPage": true,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/case-pixelrank-mobile.png",
+      "width": 390,
+      "fullPage": false,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/case-pixelrank-mobile-full.png",
+      "width": 390,
+      "fullPage": true,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/case-sneakers-mobile.png",
+      "width": 390,
+      "fullPage": false,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/case-sneakers-mobile-full.png",
+      "width": 390,
+      "fullPage": true,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/case-movieslib-mobile.png",
+      "width": 390,
+      "fullPage": false,
+      "theme": "light",
+      "language": "pt-BR"
+    },
+    {
+      "file": "docs/screenshots/case-movieslib-mobile-full.png",
+      "width": 390,
+      "fullPage": true,
+      "theme": "light",
+      "language": "pt-BR"
+    }
+  ],
+  "demos": [
+    {
+      "file": "docs/demo/home-desktop.gif",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "frameDuration": 200,
+      "outputWidth": 800,
+      "encodedFrames": 13,
+      "durationMs": 10200,
+      "bytes": 914968,
+      "outputHeight": 556,
+      "frameCount": 51
+    },
+    {
+      "file": "docs/demo/case-study-desktop.gif",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "frameDuration": 200,
+      "outputWidth": 800,
+      "encodedFrames": 17,
+      "durationMs": 12800,
+      "bytes": 977552,
+      "outputHeight": 556,
+      "frameCount": 64
+    },
+    {
+      "file": "docs/demo/preferences-desktop.gif",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "frameDuration": 200,
+      "outputWidth": 800,
+      "encodedFrames": 14,
+      "durationMs": 8800,
+      "bytes": 366666,
+      "outputHeight": 556,
+      "frameCount": 44
+    },
+    {
+      "file": "docs/demo/portfolio-mobile.gif",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "frameDuration": 200,
+      "outputWidth": 390,
+      "encodedFrames": 16,
+      "durationMs": 12600,
+      "bytes": 1086484,
+      "outputHeight": 844,
+      "frameCount": 63
+    }
+  ],
+  "pageErrors": []
+}

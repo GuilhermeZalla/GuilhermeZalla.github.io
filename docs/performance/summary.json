@@ -1,0 +1,122 @@
+[
+  {
+    "formFactor": "mobile",
+    "page": "home",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": "2.1 s",
+      "largest-contentful-paint": "2.1 s",
+      "total-blocking-time": "30 ms",
+      "cumulative-layout-shift": "0"
+    },
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "2.1 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "2.1 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "2.1 s"
+      },
+      {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "displayValue": "100 ms"
+      },
+      {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "displayValue": "3.3 s"
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 87 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 470 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "title": "Document request latency",
+        "displayValue": "Est savings of 2 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 87 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 150 ms"
+      }
+    ],
+    "note": "Local production build, simulated throttling. Scores may differ on public hosting."
+  },
+  {
+    "formFactor": "desktop",
+    "page": "home",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": "0.2 s",
+      "largest-contentful-paint": "0.2 s",
+      "total-blocking-time": "0 ms",
+      "cumulative-layout-shift": "0"
+    },
+    "failedAudits": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 87 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 470 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "title": "Document request latency",
+        "displayValue": "Est savings of 2 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 111 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests"
+      }
+    ],
+    "note": "Local production build, simulated throttling. Scores may differ on public hosting."
+  }
+]

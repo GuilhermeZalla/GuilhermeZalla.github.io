@@ -1,0 +1,383 @@
+{
+  "responsive": [
+    {
+      "width": 360,
+      "language": "en",
+      "theme": "light",
+      "overflow": false,
+      "pageErrors": []
+    },
+    {
+      "width": 360,
+      "language": "en",
+      "theme": "dark",
+      "overflow": false,
+      "pageErrors": []
+    },
+    {
+      "width": 360,
+      "language": "pt",
+      "theme": "light",
+      "overflow": false,
+      "pageErrors": []
+    },
+    {
+      "width": 360,
+      "language": "pt",
+      "theme": "dark",
+      "overflow": false,
+      "pageErrors": []
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "theme": "light",
+      "overflow": false,
+      "pageErrors": []
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "theme": "dark",
+      "overflow": false,
+      "pageErrors": []
+    },
+    {
+      "width": 390,
+      "language": "pt",
+      "theme": "light",
+      "overflow": false,
+      "pageErrors": []
+    },
+    {
+      "width": 390,
+      "language": "pt",
+      "theme": "dark",
+      "overflow": false,
+      "pageErrors": []
+    },
+    {
+      "width": 768,
+      "language": "en",
+      "theme": "light",
+      "overflow": false,
+      "pageErrors": []
+    },
+    {
+      "width": 768,
+      "language": "en",
+      "theme": "dark",
+      "overflow": false,
+      "pageErrors": []
+    },
+    {
+      "width": 768,
+      "language": "pt",
+      "theme": "light",
+      "overflow": false,
+      "pageErrors": []
+    },
+    {
+      "width": 768,
+      "language": "pt",
+      "theme": "dark",
+      "overflow": false,
+      "pageErrors": []
+    },
+    {
+      "width": 1440,
+      "language": "en",
+      "theme": "light",
+      "overflow": false,
+      "pageErrors": []
+    },
+    {
+      "width": 1440,
+      "language": "en",
+      "theme": "dark",
+      "overflow": false,
+      "pageErrors": []
+    },
+    {
+      "width": 1440,
+      "language": "pt",
+      "theme": "light",
+      "overflow": false,
+      "pageErrors": []
+    },
+    {
+      "width": 1440,
+      "language": "pt",
+      "theme": "dark",
+      "overflow": false,
+      "pageErrors": []
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 390,
+      "language": "en",
+      "theme": "light",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "theme": "dark",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "language": "pt",
+      "theme": "light",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "language": "pt",
+      "theme": "dark",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "language": "en",
+      "theme": "light",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "language": "en",
+      "theme": "dark",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "language": "pt",
+      "theme": "light",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "language": "pt",
+      "theme": "dark",
+      "violations": []
+    },
+    {
+      "state": "contact-open",
+      "width": 390,
+      "language": "pt",
+      "theme": "dark",
+      "violations": []
+    }
+  ],
+  "preferences": {
+    "languagePersisted": true,
+    "manualThemePersisted": true,
+    "systemThemeReactsToOS": true
+  },
+  "navigation": {
+    "mobileAndReload": true,
+    "curriculum": true,
+    "contactEscapeFocus": true,
+    "keyboardSkipAndLegacyRoutes": true
+  },
+  "motion": {
+    "revealOnce": true,
+    "heroAnimation": true,
+    "reducedMotion": true
+  },
+  "caseStudies": [
+    {
+      "slug": "saldoa",
+      "width": 390,
+      "language": "en",
+      "theme": "light",
+      "image": "static-local",
+      "sections": 4,
+      "directRouteAndReload": true,
+      "indexAndBackFocus": true,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "slug": "saldoa",
+      "width": 390,
+      "language": "pt",
+      "theme": "dark",
+      "image": "static-local",
+      "sections": 4,
+      "directRouteAndReload": true,
+      "indexAndBackFocus": true,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "slug": "saldoa",
+      "width": 1440,
+      "language": "en",
+      "theme": "light",
+      "image": "static-local",
+      "sections": 4,
+      "directRouteAndReload": true,
+      "indexAndBackFocus": true,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "slug": "saldoa",
+      "width": 1440,
+      "language": "pt",
+      "theme": "dark",
+      "image": "static-local",
+      "sections": 4,
+      "directRouteAndReload": true,
+      "indexAndBackFocus": true,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "slug": "pixelrank",
+      "width": 390,
+      "language": "en",
+      "theme": "light",
+      "image": "static-local",
+      "sections": 4,
+      "directRouteAndReload": true,
+      "indexAndBackFocus": true,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "slug": "pixelrank",
+      "width": 390,
+      "language": "pt",
+      "theme": "dark",
+      "image": "static-local",
+      "sections": 4,
+      "directRouteAndReload": true,
+      "indexAndBackFocus": true,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "slug": "pixelrank",
+      "width": 1440,
+      "language": "en",
+      "theme": "light",
+      "image": "static-local",
+      "sections": 4,
+      "directRouteAndReload": true,
+      "indexAndBackFocus": true,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "slug": "pixelrank",
+      "width": 1440,
+      "language": "pt",
+      "theme": "dark",
+      "image": "static-local",
+      "sections": 4,
+      "directRouteAndReload": true,
+      "indexAndBackFocus": true,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "slug": "sneakers",
+      "width": 390,
+      "language": "en",
+      "theme": "light",
+      "image": "static-local",
+      "sections": 4,
+      "directRouteAndReload": true,
+      "indexAndBackFocus": true,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "slug": "sneakers",
+      "width": 390,
+      "language": "pt",
+      "theme": "dark",
+      "image": "static-local",
+      "sections": 4,
+      "directRouteAndReload": true,
+      "indexAndBackFocus": true,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "slug": "sneakers",
+      "width": 1440,
+      "language": "en",
+      "theme": "light",
+      "image": "static-local",
+      "sections": 4,
+      "directRouteAndReload": true,
+      "indexAndBackFocus": true,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "slug": "sneakers",
+      "width": 1440,
+      "language": "pt",
+      "theme": "dark",
+      "image": "static-local",
+      "sections": 4,
+      "directRouteAndReload": true,
+      "indexAndBackFocus": true,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "slug": "movieslib",
+      "width": 390,
+      "language": "en",
+      "theme": "light",
+      "image": "static-local",
+      "sections": 4,
+      "directRouteAndReload": true,
+      "indexAndBackFocus": true,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "slug": "movieslib",
+      "width": 390,
+      "language": "pt",
+      "theme": "dark",
+      "image": "static-local",
+      "sections": 4,
+      "directRouteAndReload": true,
+      "indexAndBackFocus": true,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "slug": "movieslib",
+      "width": 1440,
+      "language": "en",
+      "theme": "light",
+      "image": "static-local",
+      "sections": 4,
+      "directRouteAndReload": true,
+      "indexAndBackFocus": true,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "slug": "movieslib",
+      "width": 1440,
+      "language": "pt",
+      "theme": "dark",
+      "image": "static-local",
+      "sections": 4,
+      "directRouteAndReload": true,
+      "indexAndBackFocus": true,
+      "violations": [],
+      "errors": []
+    }
+  ]
+}

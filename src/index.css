@@ -1,0 +1,6 @@
+* { box-sizing: border-box; }
+html { scroll-padding-top: 32px; }
+body { margin: 0; -webkit-font-smoothing: antialiased; }
+button, summary { touch-action: manipulation; }
+button { font: inherit; }
+img, svg { vertical-align: middle; }

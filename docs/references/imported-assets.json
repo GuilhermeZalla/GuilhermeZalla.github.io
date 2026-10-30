@@ -1,0 +1,37 @@
+[
+  {
+    "id": "portrait",
+    "source": "https://media.licdn.com/dms/image/v2/C4E03AQGn8wA6ucUvYg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1654802796551?e=1795046400&v=beta&t=mnLaMY7AadOlSCsFVx5Q7vQX-f7UW8lFYr9SOgh0Eb0",
+    "file": ".asset-work/portrait-source",
+    "bytes": 140504,
+    "contentType": "image/jpeg"
+  },
+  {
+    "id": "sneakers",
+    "source": "https://raw.githubusercontent.com/GuilhermeZalla/sneakers-store/refs/heads/main/docs/screenshots/home-desktop.png",
+    "file": ".asset-work/sneakers.png",
+    "bytes": 321309,
+    "contentType": "image/png"
+  },
+  {
+    "id": "pixelrank",
+    "source": "https://raw.githubusercontent.com/GuilhermeZalla/pixel-rank-app/refs/heads/main/docs/screenshots/home-desktop.png",
+    "file": ".asset-work/pixelrank.png",
+    "bytes": 568121,
+    "contentType": "image/png"
+  },
+  {
+    "id": "movieslib",
+    "source": "https://raw.githubusercontent.com/GuilhermeZalla/react-movieslib/refs/heads/main/docs/screenshots/home-desktop.png",
+    "file": ".asset-work/movieslib.png",
+    "bytes": 898495,
+    "contentType": "image/png"
+  },
+  {
+    "id": "saldoa",
+    "source": "https://raw.githubusercontent.com/GuilhermeZalla/react-saldoa-app/main/docs/images/home.gif",
+    "file": ".asset-work/saldoa.gif",
+    "bytes": 2131936,
+    "contentType": "image/gif"
+  }
+]

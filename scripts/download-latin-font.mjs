@@ -1,0 +1,16 @@
+import { writeFile } from 'node:fs/promises';
+const source = 'https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap';
+const response = await fetch(source, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36' }, signal: AbortSignal.timeout(30000) });
+if (!response.ok) throw new Error(`Font CSS: HTTP ${response.status}`);
+const css = await response.text();
+const latin = css.match(/\/\* latin \*\/\s*(@font-face\s*\{[^}]+\})/);
+if (!latin) throw new Error('Latin subset not found');
+const url = latin[1].match(/url\((https:\/\/fonts\.gstatic\.com\/[^)]+)\)/)?.[1];
+if (!url) throw new Error('Official font URL not found');
+const font = await fetch(url, { signal: AbortSignal.timeout(30000) });
+if (!font.ok) throw new Error(`Font: HTTP ${font.status}`);
+const bytes = Buffer.from(await font.arrayBuffer());
+if (bytes.subarray(0, 4).toString() !== 'wOF2') throw new Error('Invalid WOFF2');
+await writeFile(new URL('../public/fonts/InterVariable.woff2', import.meta.url), bytes);
+await writeFile(new URL('../docs/references/inter-latin.css', import.meta.url), `/* Source: ${source}\nLocal delivery; Latin subset covers the English and Portuguese interface. */\n${latin[1]}\n`);
+console.log(`Local Inter Latin variable font: ${bytes.length} bytes (previous full file: 352240).`);

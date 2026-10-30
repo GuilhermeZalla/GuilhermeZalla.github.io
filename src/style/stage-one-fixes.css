@@ -1,0 +1,39 @@
+/* Structural fixes only. The visual redesign remains pending approval.
+   Source of truth for overrides to the compiled legacy stylesheet. */
+html, body { height: auto; min-height: 100%; }
+body { user-select: text; }
+body #root { height: auto; min-height: calc(100dvh - 64px); }
+body main { overflow: visible; flex-basis: auto; min-width: 0; }
+body .container { height: auto; min-height: 0; }
+.home { min-height: 65vh; }
+body :is(a, button):focus-visible { outline: 3px solid #181818; outline-offset: 5px; }
+.header .header__navbar .header__brand { width: 200px; }
+.header .header__navbar .header__brand img { display: block; width: 100%; }
+.header .header__item:focus-within .dropdown { opacity: 1; visibility: visible; }
+.header .dropdown { top: 100%; padding-top: 12px; }
+.portfolio { display: block; }
+.portfolio .portfolio__section:first-child { padding: 64px 24px 48px; }
+.portfolio .portfolio__section .portfolio__title { line-height: 1.25; animation: none; overflow-wrap: anywhere; }
+.portfolio .portfolio__section .portfolio__subtitle { line-height: 1.6; }
+.portfolio .portfolio__section .portfolio__list { flex-wrap: wrap; padding: 0 24px; gap: 12px; }
+.portfolio .portfolio__section .portfolio__container {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); align-items: start;
+}
+.portfolio .portfolio__section .portfolio__container .portfolio__article { min-width: 0; }
+.portfolio .portfolio__section .portfolio__container .portfolio__article figure { height: auto; aspect-ratio: 8 / 5; }
+.portfolio .portfolio__section .portfolio__container .portfolio__article figure img {
+  width: 100%; height: 100%; min-height: 0; max-height: none; object-fit: contain;
+}
+.portfolio .portfolio__section .portfolio__container .portfolio__article:focus-within > span { transform: scale(1); }
+.portfolio__empty { padding: 0 24px 40px; line-height: 1.5; }
+@media (hover: none) {
+  .portfolio .portfolio__section .portfolio__container .portfolio__article > span { position: static; transform: none; padding: 12px; }
+  .portfolio .portfolio__section .portfolio__container .portfolio__article:hover { transform: none; }
+}
+@media (max-width: 991px) {
+  .header .header__navbar .header__list { display: none; }
+  .header .header__navbar .header__list.is-open { display: flex; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

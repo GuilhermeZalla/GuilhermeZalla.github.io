@@ -1,0 +1,95 @@
+[
+  {
+    "id": 1,
+    "name": "NEXTGAME",
+    "source": "https://i.imgur.com/ZDRxiYA.png",
+    "file": "/projects/project-1-demo.png",
+    "status": "captured-from-existing-demo",
+    "demo": "https://nextgame-ecommerce.netlify.app/",
+    "pageTitle": "Next Game"
+  },
+  {
+    "id": 2,
+    "name": "MOVIESLIB",
+    "source": "https://i.imgur.com/cWUMlHS.png",
+    "file": "/projects/project-2-demo.png",
+    "status": "captured-from-existing-demo",
+    "demo": "https://react-movieslib.netlify.app/",
+    "pageTitle": "MoviesLib"
+  },
+  {
+    "id": 3,
+    "name": "WINDBNB",
+    "source": "https://i.imgur.com/wm976aw.png",
+    "file": "/projects/project-3-demo.png",
+    "status": "captured-from-existing-demo",
+    "demo": "https://windbnb-gz.netlify.app/",
+    "pageTitle": "Windbnb"
+  },
+  {
+    "id": 4,
+    "name": "WHERE IN THE WORLD?",
+    "source": "https://i.imgur.com/YAwdWAb.jpg",
+    "file": "/projects/project-4-demo.png",
+    "status": "captured-from-existing-demo",
+    "demo": "https://whereintheworldcountries.netlify.app/",
+    "pageTitle": "Search Countries Web App"
+  },
+  {
+    "id": 5,
+    "name": "TODO APP",
+    "source": "https://i.imgur.com/QfIG6fi.jpg",
+    "file": "/projects/project-5.svg",
+    "status": "unavailable",
+    "reason": "Existing demo URL points to a different project; correct URL or original image required"
+  },
+  {
+    "id": 6,
+    "name": "TODO APP",
+    "source": "https://i.imgur.com/9pN8o2P.jpg",
+    "file": "/projects/project-6.svg",
+    "status": "unavailable",
+    "reason": "Existing demo URL points to a different project; correct URL or original image required"
+  },
+  {
+    "id": 7,
+    "name": "CHAT APP ILLUSTRATION",
+    "source": "https://i.imgur.com/xpJWDmt.jpg",
+    "file": "/projects/project-7.svg",
+    "status": "unavailable",
+    "reason": "Unavailable or invalid preview"
+  },
+  {
+    "id": 8,
+    "name": "SNAP",
+    "source": "https://i.imgur.com/hV1eaZu.jpg",
+    "file": "/projects/project-8-demo.png",
+    "status": "captured-from-existing-demo",
+    "demo": "https://snap-remote-work-gz.netlify.app/",
+    "pageTitle": "Snap | Make Remote Work"
+  },
+  {
+    "id": 9,
+    "name": "WEATHER WEB APP",
+    "source": "https://i.imgur.com/WoC9rqm.jpg",
+    "file": "/projects/project-9.svg",
+    "status": "unavailable",
+    "reason": "Unavailable or invalid preview"
+  },
+  {
+    "id": 10,
+    "name": "DIAGNÓSTICO PLUS",
+    "source": "https://i.imgur.com/xUxP9pE.png",
+    "file": "/projects/project-10.svg",
+    "status": "unavailable",
+    "reason": "Unavailable or invalid preview"
+  },
+  {
+    "id": 11,
+    "name": "DIAGNÓSTICO PLUS LOGO",
+    "source": "https://i.imgur.com/E93mAqe.png",
+    "file": "/projects/project-11.svg",
+    "status": "unavailable",
+    "reason": "Unavailable or invalid preview"
+  }
+]

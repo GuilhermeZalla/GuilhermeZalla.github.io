@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+.home{
+    @include flex(flex, center, center, none, column, 15px);
+}

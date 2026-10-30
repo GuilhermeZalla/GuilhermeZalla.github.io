@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Guilherme Zalla, Software Engineer. Web applications with React, Node.js, Laravel and C#/.NET, focused on clear interfaces, reliable back ends and tested code." />
+    <meta name="theme-color" content="#F7F8FA" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="canonical" href="https://guilhermezalla.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Guilherme Zalla | Software Engineer" />
+    <meta property="og:description" content="Web applications with React, Node.js, Laravel and C#/.NET, focused on clear interfaces, reliable back ends and tested code." />
+    <meta property="og:url" content="https://guilhermezalla.github.io/" />
+    <meta property="og:site_name" content="Guilherme Zalla" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://guilhermezalla.github.io/social-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Guilherme Zalla — Software Engineer. React, Node.js, Laravel and C#/.NET." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Guilherme Zalla | Software Engineer" />
+    <meta name="twitter:description" content="Web applications with React, Node.js, Laravel and C#/.NET, focused on clear interfaces, reliable back ends and tested code." />
+    <meta name="twitter:image" content="https://guilhermezalla.github.io/social-card.png" />
+    <meta name="twitter:image:alt" content="Guilherme Zalla — Software Engineer. React, Node.js, Laravel and C#/.NET." />
+    <script>
+      // Apply the saved/system theme before rendering to avoid a light flash.
+      (() => {
+        let saved;
+        try { saved = localStorage.getItem('portfolio-theme'); } catch {}
+        const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = saved === 'dark' || saved === 'light' ? saved : dark ? 'dark' : 'light';
+        document.documentElement.dataset.theme = theme;
+        document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#15171B' : '#F7F8FA';
+        // Discover a directly opened case image before React and its page chunk load.
+        const study = location.hash.match(/^#\/projects\/(saldoa|pixelrank|sneakers|movieslib)(?:#|$)/);
+        if (study) {
+          const image = document.createElement('link');
+          image.rel = 'preload';
+          image.as = 'image';
+          image.href = '/projects/' + study[1] + '-home.webp';
+          image.setAttribute('fetchpriority', 'high');
+          document.head.append(image);
+        }
+      })();
+    </script>
+    <title>Guilherme Zalla | Software Engineer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
+  </body>
+</html>

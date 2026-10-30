@@ -1,0 +1,37 @@
+[
+  {
+    "id": "portrait",
+    "width": 668,
+    "height": 668,
+    "full": "src/assets/images/portrait.webp",
+    "bytes": 58980
+  },
+  {
+    "id": "saldoa",
+    "width": 1886,
+    "height": 906,
+    "full": "public/projects/saldoa-home.webp",
+    "bytes": 36502
+  },
+  {
+    "id": "pixelrank",
+    "width": 1440,
+    "height": 1000,
+    "full": "public/projects/pixelrank-home.webp",
+    "bytes": 103900
+  },
+  {
+    "id": "sneakers",
+    "width": 1425,
+    "height": 1000,
+    "full": "public/projects/sneakers-home.webp",
+    "bytes": 83666
+  },
+  {
+    "id": "movieslib",
+    "width": 1440,
+    "height": 1000,
+    "full": "public/projects/movieslib-home.webp",
+    "bytes": 113464
+  }
+]
