@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -75,3 +76,12 @@ export function HomeScreen() {
     </>
   );
 }
+=======
+import { Home } from "../components/home/home";
+
+export const HomeScreen = () => {
+    return(
+        <Home/>
+    );
+};
+>>>>>>> f11ee110860bb4def122ac2bf55cd81a375450b1

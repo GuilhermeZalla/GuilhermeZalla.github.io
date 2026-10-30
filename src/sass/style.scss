@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Colors */
 
 @import "./variables/colors/colors.scss";
@@ -15,3 +16,22 @@
 @import "./components/about/about.scss";
 @import "./components/portfolio/portfolio.scss";
 @import "./components/contact/contact.scss";
+=======
+/* Colors */
+
+@import "./variables/colors/colors.scss";
+
+/* Fonts */
+
+@import 'https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@400;600;700&display=swap';
+@import "./variables/fonts/fonts.scss";
+
+/* Components */
+
+@import "./components/common/header/header.scss";
+@import "./components/common/footer/footer.scss";
+@import "./components/home/home.scss";
+@import "./components/about/about.scss";
+@import "./components/portfolio/portfolio.scss";
+@import "./components/contact/contact.scss";
+>>>>>>> f11ee110860bb4def122ac2bf55cd81a375450b1
