@@ -15,6 +15,8 @@
 - Cópia de segurança local dos arquivos anteriores em .asset-work/merge-backup/, fora do versionamento.
 - Build de produção e oito testes passando. Navegador: 16 combinações da Home e 16 dos estudos de caso, com acessibilidade automatizada, URLs diretas/reload, navegação por índice, foco, preferências, currículo, contato e movimento reduzido verificados com sucesso. Capturas desta conferência ficam na pasta temporária; relatório em site-verification.json.
 - Origem do GitHub Pages confirmada pela API: branch gh-pages, diretório raiz. Código-fonte mantido na main; publicação dos arquivos de dist com o comando de deploy, sem merge entre as branches.
+- Correções enviadas à main no commit 103ed6f. Publicação concluída na gh-pages no commit 1062b46, com build do GitHub Pages confirmado como built e site disponível em https://guilhermezalla.github.io/.
+- Verificação do site público em 390 e 1440 px: Home, quatro projetos e anos, foto colorida, preenchimento das imagens, troca para PT, estudos do Saldoa/MoviesLib, URL direta e reload funcionando, sem erros de página ou recursos locais indisponíveis. Evidências locais em .asset-work/live-deployment-verification.json e capturas temporárias.
 
 ## Documentação e demonstrações — 30/10/2026
 
