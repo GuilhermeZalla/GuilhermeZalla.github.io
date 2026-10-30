@@ -6,6 +6,7 @@ import { ContactLinks } from '../components/site/ContactLinks';
 import { SiteFooter } from '../components/site/SiteFooter';
 import { ProjectCard } from '../components/site/ProjectCard';
 import { Reveal } from '../components/site/Reveal';
+import { TypingRole } from '../components/site/TypingRole';
 import { useTheme } from '../hooks/useTheme';
 import { projects } from '../data/projects';
 import { profile } from '../data/profile';
@@ -37,7 +38,7 @@ export function HomeScreen() {
         <section className="hero" aria-labelledby="hero-title">
           <p className="eyebrow hero-enter">React · Node.js · Laravel · C#/.NET</p>
           <h1 id="hero-title" className="hero-enter">Guilherme Zalla</h1>
-          <p className="role hero-enter">Software Engineer</p>
+          <p className="role hero-enter"><TypingRole /></p>
           <p className="intro hero-enter">{t('hero.intro')}</p>
           <div className="actions hero-enter">
             <Link to="/projects" className="button primary">{t('hero.projects')} <span aria-hidden="true">↘</span></Link>
