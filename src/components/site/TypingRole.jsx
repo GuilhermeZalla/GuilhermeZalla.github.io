@@ -1,12 +1,26 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
-const phrases = ['Software Engineer', 'Full Stack Developer', 'always learning', 'always building'];
+const phrasesByLanguage = {
+  en: ['Software Engineer', 'Full Stack Developer', 'always learning', 'always building'],
+  pt: ['Software Engineer', 'Full Stack Developer', 'sempre aprendendo', 'sempre construindo'],
+};
 
 export function TypingRole() {
+  const { i18n } = useTranslation();
+  const language = i18n.resolvedLanguage === 'pt' ? 'pt' : 'en';
+  const phrases = phrasesByLanguage[language];
   const [text, setText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [delta, setDelta] = useState(120);
+
+  useEffect(() => {
+    setText('');
+    setIsDeleting(false);
+    setLoopNum(0);
+    setDelta(120);
+  }, [language]);
 
   useEffect(() => {
     const fullText = phrases[loopNum % phrases.length];
@@ -29,7 +43,7 @@ export function TypingRole() {
     }, delta);
 
     return () => clearTimeout(ticker);
-  }, [text, isDeleting, loopNum, delta]);
+  }, [text, isDeleting, loopNum, delta, phrases]);
 
   return (
     <span className="typing-role" aria-label={phrases[0]}>
