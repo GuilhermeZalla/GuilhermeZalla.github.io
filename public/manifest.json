@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "short_name": "Guilherme Zalla",
   "name": "Guilherme Zalla | Software Engineer",
   "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }],
@@ -7,29 +6,4 @@
   "display": "browser",
   "theme_color": "#F7F8FA",
   "background_color": "#F7F8FA"
-=======
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
->>>>>>> f11ee110860bb4def122ac2bf55cd81a375450b1
 }

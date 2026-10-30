@@ -7,6 +7,15 @@
 - Protótipos estáticos para revisão antes de iniciar a etapa 2.
 - Mockup aprovado pelo usuário, com autorização para integrar o layout e adicionar animações sutis.
 
+## Correção de merge e publicação — 30/10/2026
+
+- Correção de todos os conflitos e publicação no GitHub Pages autorizadas pelo usuário.
+- 30 arquivos com marcadores de conflito resolvidos preservando a versão do commit aprovado 15b184c. README atual preservado, sem os blocos antigos do CRA/Next Game e sem links para o guia de entrevista removido ou para os protótipos excluídos.
+- 25 arquivos antigos reintroduzidos pelo merge removidos: saídas de build do CRA, entradas JS duplicadas, teste padrão antigo, reportWebVitals, HTML público antigo e foto anterior. A entrada Vite em src/index.jsx e o App.jsx atual voltam a ser usados sem ambiguidade.
+- Cópia de segurança local dos arquivos anteriores em .asset-work/merge-backup/, fora do versionamento.
+- Build de produção e oito testes passando. Navegador: 16 combinações da Home e 16 dos estudos de caso, com acessibilidade automatizada, URLs diretas/reload, navegação por índice, foco, preferências, currículo, contato e movimento reduzido verificados com sucesso. Capturas desta conferência ficam na pasta temporária; relatório em site-verification.json.
+- Origem do GitHub Pages confirmada pela API: branch gh-pages, diretório raiz. Código-fonte mantido na main; publicação dos arquivos de dist com o comando de deploy, sem merge entre as branches.
+
 ## Documentação e demonstrações — 30/10/2026
 
 - README reescrito em português seguindo a estrutura do exemplo fornecido: demonstrações, screenshots, estrutura/stack, execução, interface, idiomas/temas/acessibilidade, conteúdo, limites, verificação, decisões e publicação.

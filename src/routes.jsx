@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { HashRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { HomeScreen } from './screens/homeScreen';
 import CaseStudyScreen from './screens/caseStudyScreen';
@@ -23,23 +22,3 @@ export const LayoutScreens = () => (
     </Routes>
   </HashRouter>
 );
-=======
-import { Routes, Route, HashRouter } from "react-router-dom";
-import { HomeScreen } from "./screens/homeScreen";
-import { AboutScreen } from "./screens/aboutScreen";
-import { ContactScreen } from "./screens/contactScreen";
-import { PortfolioScreen } from "./screens/portfolioScreen";
-
-export const LayoutScreens = () => {
-    return (
-        <HashRouter>
-            <Routes>
-                <Route exact path={'/'} element={<HomeScreen />} />
-                <Route exact path={'/about'} element={<AboutScreen />} />
-                <Route exact path={'/contact'} element={<ContactScreen />} />
-                <Route exact path={'/portfolio/:section'} element={<PortfolioScreen />} />
-            </Routes>
-        </HashRouter>
-    );
-}
->>>>>>> f11ee110860bb4def122ac2bf55cd81a375450b1
