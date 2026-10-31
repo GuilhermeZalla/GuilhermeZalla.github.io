@@ -2,11 +2,11 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Reveal } from './Reveal';
 
-export function ProjectCard({ project, index }) {
+export function ProjectCard({ project, index, compact = false }) {
   const { t, i18n } = useTranslation();
   const language = i18n.resolvedLanguage === 'pt' ? 'pt' : 'en';
   return (
-    <Reveal as="article" className={project.featured ? 'project' : 'small-project'} aria-labelledby={`project-${project.id}`}>
+    <Reveal as="article" className={compact || !project.featured ? 'small-project' : 'project'} aria-labelledby={`project-${project.id}`}>
       <figure className={`project-cover${project.image ? ' has-image' : ''}`}>
         {project.image ? <img src={project.preview ?? project.image} alt={t('projects.imageAlt', { name: project.name })} width="720" height="500" loading="lazy" decoding="async" /> : <>
           <div><div className="cover-name">{project.name}</div><div className="cover-type">{project.category[language]} · {project.stack.slice(0, 2).join(' / ')}</div></div>

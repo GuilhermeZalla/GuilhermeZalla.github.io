@@ -68,6 +68,10 @@ p { color: var(--muted); }
 .actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 32px; }
 .button { display: inline-flex; gap: 8px; min-height: 46px; align-items: center; justify-content: center; padding: 10px 20px; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 550; background: var(--surface); color: var(--ink); }
 .button:hover { border-color: var(--accent); text-decoration: none; }
+.project-filters { gap: 16px; margin-bottom: 32px; flex-wrap: wrap; }
+.project-filters .button { min-height: 36px; padding: 8px 16px; font-size: 13px; white-space: nowrap; }
+.project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.button[aria-pressed='true'] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 .button.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 .socials { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 24px; font-size: 13px; }
 .socials a { color: var(--muted); text-decoration: none; }
@@ -197,6 +201,7 @@ p { color: var(--muted); }
   .cover-name { font-size: 28px; }
   .cover-slot { margin: 20px 0 12px; padding: 16px; }
   .other-projects { grid-template-columns: 1fr; gap: 32px; padding-top: 28px; }
+  .project-grid { grid-template-columns: 1fr; gap: 32px; }
   .small-project + .small-project { padding-top: 28px; border-top: 1px solid var(--line); }
   .about-section { grid-template-columns: 1fr; gap: 28px; }
   .portrait { width: 112px; order: -1; }

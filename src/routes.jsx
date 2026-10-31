@@ -1,5 +1,6 @@
 import { HashRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { HomeScreen } from './screens/homeScreen';
+import { AllProjectsScreen } from './screens/allProjectsScreen';
 import CaseStudyScreen from './screens/caseStudyScreen';
 import { NotFoundScreen } from './screens/notFoundScreen';
 import { useMetadata } from './hooks/useMetadata';
@@ -17,7 +18,8 @@ export const LayoutScreens = () => (
     <Metadata />
     <Routes>
       {['/', '/projects', '/about', '/stack', '/contact', '/portfolio', '/portfolio/:section'].map(path => <Route key={path} path={path} element={<HomeScreen />} />)}
-      <Route path="/projects/:slug" element={<CaseStudyScreen />} />
+      <Route path="/projects/all" element={<AllProjectsScreen />} />
+       <Route path="/projects/:slug" element={<CaseStudyScreen />} />
       <Route path="*" element={<NotFoundScreen />} />
     </Routes>
   </HashRouter>

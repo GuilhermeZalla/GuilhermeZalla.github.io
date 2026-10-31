@@ -53,6 +53,7 @@ export function HomeScreen() {
           <div className="other-projects">
             {projects.filter(project => !project.featured).map(project => <ProjectCard key={project.id} project={project} index={projects.indexOf(project)} />)}
           </div>
+          <div className="actions"><Link to="/projects/all" className="button">{t('projects.viewAll')} <span aria-hidden="true">↗</span></Link></div>
         </section>
 
         <Reveal as="section" className="section about-section" id="about" tabIndex="-1" aria-labelledby="about-title">

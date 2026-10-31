@@ -2,6 +2,7 @@
 export const projects = [
   {
     id: 'saldoa', name: 'Saldoa', year: 2025, featured: true,
+    type: 'App',
     languages: ['pt'],
     stack: ['Laravel', 'React', 'Inertia'],
     repository: 'https://github.com/GuilhermeZalla/react-saldoa-app', demo: null,
@@ -14,6 +15,7 @@ export const projects = [
   },
   {
     id: 'pixelrank', name: 'PixelRank', year: 2026, featured: true,
+    type: 'Entertainment',
     languages: ['pt', 'en'],
     stack: ['Laravel', 'Blade', 'Tailwind CSS', 'Alpine.js', 'MySQL/SQLite', 'Pest'],
     repository: 'https://github.com/GuilhermeZalla/pixel-rank-app', demo: null,
@@ -26,6 +28,7 @@ export const projects = [
   },
   {
     id: 'sneakers', name: 'Sneakers Store', year: 2024, featured: false,
+    type: 'E-commerce',
     languages: ['pt', 'en'],
     stack: ['Laravel', 'React', 'TypeScript', 'React Router', 'Sanctum', 'Pest'],
     repository: 'https://github.com/GuilhermeZalla/sneakers-store', demo: null,
@@ -38,6 +41,7 @@ export const projects = [
   },
   {
     id: 'movieslib', name: 'MoviesLib', year: 2026, featured: false,
+    type: 'SPA',
     languages: ['pt', 'en'],
     stack: ['React', 'TypeScript', 'Tailwind CSS', 'TanStack Query', 'Zod', 'TMDB API'],
     repository: 'https://github.com/GuilhermeZalla/react-movieslib', demo: null,

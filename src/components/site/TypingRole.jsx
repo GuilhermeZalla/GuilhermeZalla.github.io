@@ -10,6 +10,15 @@ export function TypingRole() {
   const { i18n } = useTranslation();
   const language = i18n.resolvedLanguage === 'pt' ? 'pt' : 'en';
   const phrases = phrasesByLanguage[language];
+
+  return (
+    <span key={language} className="typing-role" aria-label={phrases[0]}>
+      <TypingRoleAnimation phrases={phrases} />
+    </span>
+  );
+}
+
+function TypingRoleAnimation({ phrases }) {
   const [text, setText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
@@ -20,7 +29,7 @@ export function TypingRole() {
     setIsDeleting(false);
     setLoopNum(0);
     setDelta(120);
-  }, [language]);
+  }, [phrases]);
 
   useEffect(() => {
     const fullText = phrases[loopNum % phrases.length];
@@ -46,9 +55,9 @@ export function TypingRole() {
   }, [text, isDeleting, loopNum, delta, phrases]);
 
   return (
-    <span className="typing-role" aria-label={phrases[0]}>
+    <>
       {text}
       <span className="typing-caret" aria-hidden="true">|</span>
-    </span>
+    </>
   );
 }
