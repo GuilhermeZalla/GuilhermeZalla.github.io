@@ -15,7 +15,7 @@ export function ProjectCard({ project, index }) {
         </>}
       </figure>
       <div className="project-copy">
-        <p className="eyebrow">{String(index + 1).padStart(2, '0')} / {t('projects.type')} · <span aria-label={project.year ? undefined : t('projects.yearPending')}>{project.year ?? '[YEAR]'}</span></p>
+        <p className="eyebrow">{String(index + 1).padStart(2, '0')} / {t('projects.type')} · <span aria-label={project.year ? undefined : t('projects.yearPending')}>{project.year ?? '[YEAR]'}</span>{project.languages?.length ? ` · ${project.languages.map(code => code.toUpperCase()).join(' / ')}` : ''}</p>
         <h3 id={`project-${project.id}`}>{project.name}</h3>
         <p>{project.description[language]}</p>
         <ul className="tags" aria-label={`${project.name} stack`}>{project.stack.map(technology => <li key={technology}>{technology}</li>)}</ul>
