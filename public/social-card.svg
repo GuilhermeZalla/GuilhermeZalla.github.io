@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <rect width="1200" height="630" fill="#f7f8fa"/>
-  <path d="M96 160H160" stroke="#b32656" stroke-width="5"/>
+  <path d="M96 160H160" stroke="#2656b5" stroke-width="5"/>
   <text x="92" y="280" fill="#20242c" font-family="Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-4">Guilherme Zalla</text>
   <text x="96" y="348" fill="#555d69" font-family="Arial,sans-serif" font-size="38" letter-spacing="-1">Software Engineer</text>
   <text x="96" y="470" fill="#555d69" font-family="Arial,sans-serif" font-size="26">React · Node.js · Laravel · C#/.NET</text>
-  <text x="96" y="550" fill="#b32656" font-family="Arial,sans-serif" font-size="20">guilhermezalla.github.io</text>
+  <text x="96" y="550" fill="#2656b5" font-family="Arial,sans-serif" font-size="20">guilhermezalla.github.io</text>
 </svg>
