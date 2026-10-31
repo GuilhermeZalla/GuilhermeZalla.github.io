@@ -17,9 +17,10 @@ export function AllProjectsScreen() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
+  const language = i18n.resolvedLanguage === 'pt' ? 'pt' : 'en';
   const [filter, setFilter] = useState('all');
-  const types = [...new Set(projects.map(project => project.type))];
-  const filtered = filter === 'all' ? projects : projects.filter(project => project.type === filter);
+  const allTypes = [...new Set(projects.flatMap(project => project.type))];
+  const filtered = filter === 'all' ? projects : projects.filter(project => project.type.includes(filter));
 
   return (
     <>
@@ -33,9 +34,9 @@ export function AllProjectsScreen() {
           </Reveal>
           <div className="actions project-filters" role="group" aria-label={t('projects.filter')}>
             <button type="button" className="button" aria-pressed={filter === 'all'} onClick={() => setFilter('all')}>{t('projects.all')}</button>
-            {types.map(type => (
+            {allTypes.map(type => (
               <button key={type} type="button" className="button" aria-pressed={filter === type} onClick={() => setFilter(type)}>
-                {type}
+                {t(`projects.types.${type}`)}
               </button>
             ))}
           </div>
