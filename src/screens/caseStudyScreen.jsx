@@ -40,9 +40,14 @@ export default function CaseStudyScreen() {
         <p className="case-description">{study.subtitle[language]}</p>
         <dl className="case-meta">
           <div><dt>{t('case.stack')}</dt><dd>{project.stack.join(' · ')}</dd></div>
-          <div><dt>{t('case.year')}</dt><dd aria-label={project.year ? undefined : t('projects.yearPending')}>{project.year ?? '[YEAR]'}</dd></div>
+          <div><dt>{t('case.year')}</dt><dd aria-label={project.year ? undefined : t('projects.yearPending')}>{project.yearLabel?.[language] ?? project.year ?? '[YEAR]'}</dd></div>
         </dl>
-        <div className="actions"><a className="button" href={project.repository}>{t('projects.repository')} ↗</a>{project.demo && <a className="button primary" href={project.demo}>{t('projects.demo')} ↗</a>}</div>
+        <div className="actions">
+          <a className="button" href={project.repository}>{t('projects.repository')} ↗</a>
+          {project.website && <a className="button primary" href={project.website}>{t('projects.website')} ↗</a>}
+          {project.androidApp && <a className="button" href={project.androidApp}>{t('projects.androidPreview')} ↗</a>}
+          {project.demo && <a className="button primary" href={project.demo}>{t('projects.demo')} ↗</a>}
+        </div>
         <figure className={`case-visual${project.id === 'saldoa' ? ' case-visual--full-image' : ''}`}>
           <a className="case-image-link" href={project.image} target="_blank" rel="noreferrer" aria-label={`${t('case.fullImage')}: ${project.name}`}>
             <img src={project.image} alt={t('projects.imageAlt', { name: project.name })} width={project.id === 'saldoa' ? '1920' : '1440'} height={project.id === 'saldoa' ? '1080' : '1000'} decoding="async" />

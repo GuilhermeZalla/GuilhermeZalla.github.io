@@ -17,9 +17,9 @@ export const caseStudies = {
         pt: 'Uma interface financeira precisa manter os registros de cada pessoa separados. Verificações de propriedade e validação no servidor são cuidados importantes: as regras de acesso ficam junto aos dados, sem depender apenas dos controles que a interface exibe.',
       } },
       { id: 'result', title: { en: 'Records and a financial overview.', pt: 'Registros e uma visão das finanças.' }, body: {
-        en: 'The project combines income and expense records, categories, monthly limits and a financial dashboard. Its documented stack connects Laravel, React and Inertia in one application.',
-        pt: 'O projeto combina registros de receitas e despesas, categorias, limites mensais e um dashboard financeiro. A stack documentada conecta Laravel, React e Inertia em uma aplicação.',
-      }, limitation: { en: 'This is a portfolio project; no public production demo is currently documented.', pt: 'É um projeto de portfólio; não há uma demo pública de produção documentada no momento.' } },
+        en: 'The web app brings together income and expense records, categories, monthly limits, recurring transactions, exports and a financial dashboard. The Android app uses React Native and Expo with the same Laravel backend.',
+        pt: 'A aplicação web reúne receitas e despesas, categorias, limites mensais, lançamentos recorrentes, exportação e um dashboard financeiro. O app Android usa React Native e Expo com o mesmo backend Laravel.',
+      }, limitation: { en: 'The website is publicly available. The Android APK is an ARM64 pre-release signed with a debug key, not distributed through Google Play. Email delivery for password recovery and account-deletion confirmation is not yet configured.', pt: 'O site está disponível publicamente. O APK Android é uma prévia para ARM64 assinada com chave de depuração, ainda sem distribuição pela Google Play. O envio de e-mails para recuperação de senha e confirmação da exclusão da conta ainda não está configurado.' } },
     ],
   },
   pixelrank: {

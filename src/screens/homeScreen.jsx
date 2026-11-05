@@ -36,7 +36,7 @@ export function HomeScreen() {
       <Header mode={mode} setMode={setMode} />
       <main id="main" className="container" tabIndex="-1">
         <section className="hero" aria-labelledby="hero-title">
-          <p className="eyebrow hero-enter">React · Node.js · Laravel · C#/.NET</p>
+          <p className="eyebrow hero-enter">React · React Native · Node.js · Laravel · C#/.NET</p>
           <h1 id="hero-title" className="hero-enter">Guilherme Zalla</h1>
           <p className="role hero-enter"><TypingRole /></p>
           <p className="intro hero-enter">{t('hero.intro')}</p>

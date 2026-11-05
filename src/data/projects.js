@@ -1,16 +1,19 @@
 // Years and screenshots were supplied by the author; project facts were supplied or verified.
 export const projects = [
   {
-    id: 'saldoa', name: 'Saldoa', year: 2025, featured: true,
+    id: 'saldoa', name: 'Saldoa', year: 2025, yearLabel: { en: '2025 web · 2026 app', pt: 'Web 2025 · App 2026' }, featured: true,
     type: ['app'],
     languages: ['pt'],
-    stack: ['Laravel', 'React', 'Inertia'],
-    repository: 'https://github.com/GuilhermeZalla/react-saldoa-app', demo: null,
+    stack: ['Laravel', 'Sanctum', 'React', 'Inertia', 'TypeScript', 'Tailwind CSS', 'Expo', 'React Native'],
+    repository: 'https://github.com/GuilhermeZalla/react-saldoa-app',
+    website: 'https://saldoa-app.duckdns.org',
+    androidApp: 'https://github.com/GuilhermeZalla/react-saldoa-app/releases/tag/mobile-v1.0.0-preview.1',
+    demo: null,
     image: '/projects/saldoa-home.svg', preview: '/projects/saldoa-portfolio-cover.svg',
     category: { en: 'Personal finance', pt: 'Finanças pessoais' },
     description: {
-      en: 'A personal finance tracker that helps you follow the money coming in and going out. Record income and expenses, organize everything by category, set monthly limits and see a summary of your finances on the dashboard. A portfolio project built with Laravel, React and Inertia.',
-      pt: 'Um aplicativo de finanças pessoais para acompanhar entradas e saídas. Registre receitas e despesas, organize tudo por categoria, defina limites mensais e veja um resumo das suas finanças no dashboard. Um projeto de portfólio feito com Laravel, React e Inertia.',
+      en: 'A personal finance app for web and Android. Track income and expenses, organize them by category, set monthly limits and review your finances on the dashboard. The Android app is built with React Native and Expo and shares the Laravel backend.',
+      pt: 'Um aplicativo de finanças pessoais para web e Android. Acompanhe receitas e despesas, organize por categoria, defina limites mensais e veja um resumo das finanças no dashboard. O app Android é feito com React Native e Expo e compartilha o backend Laravel.',
     },
   },
   {

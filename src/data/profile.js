@@ -12,7 +12,7 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/guilhermezalla/',
   whatsapp: 'https://wa.me/5511999423099',
   portraitUrl,
-  stack: ['React', 'Node.js', 'Laravel', 'C# / .NET'],
+  stack: ['React', 'React Native', 'Node.js', 'Laravel', 'C# / .NET'],
   curriculumUrls: {
     en: curriculumUrlEn,
     pt: curriculumUrlPt,

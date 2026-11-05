@@ -17,12 +17,12 @@ Cada página tem quatro seções: problema, decisões técnicas, desafios e resu
 
 | Projeto | Foco do estudo | Limite explicitado |
 | --- | --- | --- |
-| Saldoa | Laravel/Inertia/React, validação e isolamento dos registros financeiros | Projeto de portfólio sem demo pública documentada |
+| Saldoa | Laravel/Inertia/React na Web e React Native/Expo no Android, validação e isolamento dos registros financeiros | Site público; APK Android ARM64 de prévia, ainda sem publicação na Play Store |
 | PixelRank | Blade/Alpine, Policies e tratamento de falhas do IGDB | Novas avaliações dependem do IGDB configurado; sem notificações por WebSocket |
 | Sneakers Store | API Laravel + React, sessão Sanctum e repetição idempotente do checkout | Pagamentos simulados, sem cobrança real ou associação às marcas |
 | MoviesLib | Proxy do TMDB, TanStack Query, Zod e descoberta sem cadastro | Lista local sem sincronização; trailers, não filmes completos; filtros por título limitados à página recebida |
 
-O Saldoa permanece dentro das funcionalidades da descrição fornecida: receitas, despesas, categorias, limites mensais e dashboard. Não foram acrescentadas recorrências, exportação ou outras funcionalidades ao texto do portfólio.
+O Saldoa tem versão Web finalizada em 2025 e app Android adicionado em 2026, compartilhando o backend Laravel. O texto também reflete as funcionalidades documentadas de recorrência e exportação; o APK Android é uma prévia para testes, ainda sem publicação na Play Store.
 
 ## Fontes verificadas
 
@@ -37,7 +37,7 @@ As cópias consultadas estão em references/. Esses documentos não foram execut
 ## Ainda pode ser melhorado
 
 - Acrescentar um relato pessoal real sobre uma decisão ou dificuldade, se o autor desejar. A primeira versão já funciona sem inventar esses relatos.
-- Incluir demos somente quando houver URLs públicas atuais. Os READMEs consultados não documentam uma demo pública atual dos quatro projetos.
+- O Saldoa oferece links para o site público e para a página de release da prévia Android. PixelRank, Sneakers Store e MoviesLib continuam sem demos públicas documentadas.
 - Revisar os textos e fazer a conferência no GitHub Pages depois da publicação.
 - Next Game e Nova Geração ficam fora da Home por decisão do usuário, com os dados preservados para revisão futura.
 

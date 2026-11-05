@@ -15,13 +15,15 @@ export function ProjectCard({ project, index, compact = false }) {
         </>}
       </figure>
       <div className="project-copy">
-        <p className="eyebrow">{String(index + 1).padStart(2, '0')} / {t('projects.type')} · <span aria-label={project.year ? undefined : t('projects.yearPending')}>{project.year ?? '[YEAR]'}</span>{project.languages?.length ? ` · ${project.languages.map(code => code.toUpperCase()).join(' / ')}` : ''}</p>
+        <p className="eyebrow">{String(index + 1).padStart(2, '0')} / {t('projects.type')} · <span aria-label={project.year ? undefined : t('projects.yearPending')}>{project.yearLabel?.[language] ?? project.year ?? '[YEAR]'}</span>{project.languages?.length ? ` · ${project.languages.map(code => code.toUpperCase()).join(' / ')}` : ''}</p>
         <h3 id={`project-${project.id}`}>{project.name}</h3>
         <p>{project.description[language]}</p>
         <ul className="tags" aria-label={`${project.name} stack`}>{project.stack.map(technology => <li key={technology}>{technology}</li>)}</ul>
         <div className="project-links">
           <Link to={`/projects/${project.id}`}>{t('projects.caseStudy')} <span aria-hidden="true">↗</span></Link>
           {project.repository ? <a href={project.repository}>{t('projects.repository')} <span aria-hidden="true">↗</span></a> : <span className="pending">{project.repositoryPlaceholder ?? '[REPOSITORY]'}</span>}
+          {project.website && <a href={project.website}>{t('projects.website')} <span aria-hidden="true">↗</span></a>}
+          {project.androidApp && <a href={project.androidApp}>{t('projects.androidPreview')} <span aria-hidden="true">↗</span></a>}
           {project.demo && <a href={project.demo}>{t('projects.demo')} <span aria-hidden="true">↗</span></a>}
         </div>
       </div>
