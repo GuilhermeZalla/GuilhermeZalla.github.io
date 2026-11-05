@@ -1,6 +1,6 @@
 # Guilherme Zalla — Portfólio
 
-Portfólio pessoal de Guilherme Zalla, Software Engineer. Apresenta projetos de aplicações web, estudos de caso, tecnologias, currículo e formas de contato em uma interface responsiva, com português/inglês e temas claro, escuro e automático.
+Portfólio pessoal. Apresenta projetos de aplicações web, estudos de caso, tecnologias, currículo e formas de contato em uma interface responsiva, com português/inglês e temas claro, escuro e automático.
 
 O projeto começou com Create React App em 2022 e foi atualizado para React + Vite. A aplicação é estática: navegação, preferências e conteúdo funcionam no navegador, sem servidor de aplicação ou banco de dados. Está preparada para publicação no GitHub Pages em `https://guilhermezalla.github.io/`.
 
