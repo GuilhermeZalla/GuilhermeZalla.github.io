@@ -6,7 +6,7 @@ export const projects = [
     languages: ['pt'],
     stack: ['Laravel', 'React', 'Inertia'],
     repository: 'https://github.com/GuilhermeZalla/react-saldoa-app', demo: null,
-    image: '/projects/saldoa-home.webp', preview: '/projects/saldoa-preview.webp',
+    image: '/projects/saldoa-home.svg', preview: '/projects/saldoa-portfolio-cover.svg',
     category: { en: 'Personal finance', pt: 'Finanças pessoais' },
     description: {
       en: 'A personal finance tracker that helps you follow the money coming in and going out. Record income and expenses, organize everything by category, set monthly limits and see a summary of your finances on the dashboard. A portfolio project built with Laravel, React and Inertia.',

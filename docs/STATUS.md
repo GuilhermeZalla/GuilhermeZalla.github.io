@@ -1,4 +1,13 @@
-# Status — 30/10/2026
+# Status — 05/11/2026
+
+## Capa do Saldoa responsiva — 05/11/2026
+
+- Na página do Saldoa, a imagem passa a usar sua proporção natural, sem o corte lateral causado pelo quadro 4:3 do mobile. Dimensões do SVG horizontal corrigidas no elemento de imagem.
+- Na Home, a capa do Saldoa preserva 16:11 também nas telas pequenas, sem altura mínima que provoque recorte. Os demais projetos mantêm suas regras existentes.
+- Corrigida a referência da prévia: `saldoa-preview.svg` não existia; o cartão usa `public/projects/saldoa-portfolio-cover.svg`. A página de detalhes usa `public/projects/saldoa-home.svg`. Os arquivos de imagem previamente alterados pelo autor foram preservados.
+- Testes existentes aceitam SVG e verificam que as capas dos cartões e estudos de caso existem no diretório público. Oito testes aprovados e build de produção concluído.
+- Navegador sobre o build local: Home e estudo do Saldoa em 360, 390, 624, 768 e 1440 px; imagens completas, sem erros JavaScript, respostas HTTP de erro ou rolagem horizontal. Capturas de conferência em arquivos temporários locais.
+- Alterações locais, sem commit, push ou publicação nesta etapa. Incluir os dois SVGs novos em `public/projects` ao versionar a entrega.
 
 ## Autorizado
 

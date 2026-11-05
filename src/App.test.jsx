@@ -1,3 +1,5 @@
+import { existsSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { render, screen, fireEvent, cleanup, waitFor } from '@testing-library/react';
 import App from './App';
 import i18n from './i18n';
@@ -14,7 +16,10 @@ beforeEach(async () => {
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); });
 
 test('shows the four supplied projects in the approved order, with no invented links', () => {
-  render(<App />);
+  const { container } = render(<App />);
+  for (const image of container.querySelectorAll('.project-cover img')) {
+    expect(existsSync(resolve('public', image.getAttribute('src').slice(1)))).toBe(true);
+  }
   expect(screen.getAllByRole('article').map(article => article.querySelector('h3').textContent)).toEqual(['Saldoa', 'PixelRank', 'Sneakers Store', 'MoviesLib']);
   expect(screen.queryByText('[SALDOA_REPO]')).toBeNull();
   expect(screen.getAllByRole('link', { name: 'Read case study' })).toHaveLength(4);
@@ -62,7 +67,9 @@ test.each([['saldoa', 'Saldoa'], ['pixelrank', 'PixelRank'], ['sneakers', 'Sneak
   window.location.hash = `#/projects/${slug}`;
   const { container } = render(<App />);
   expect(await screen.findByRole('heading', { name, level: 1 })).toBeTruthy();
-  expect(container.querySelector('.case-image-link img').getAttribute('src')).toMatch(/^\/projects\/.+\.webp$/);
+  const imageSource = container.querySelector('.case-image-link img').getAttribute('src');
+  expect(imageSource).toMatch(/^\/projects\/.+\.(?:webp|svg)$/);
+  expect(existsSync(resolve('public', imageSource.slice(1)))).toBe(true);
   expect(container.querySelectorAll('.case-section')).toHaveLength(4);
   expect(document.title).toContain(name);
   fireEvent.click(screen.getByRole('button', { name: 'PT', exact: true }));
