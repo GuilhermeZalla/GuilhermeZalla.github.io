@@ -7,7 +7,7 @@ export const projects = [
     stack: ['Laravel', 'Sanctum', 'React', 'Inertia', 'TypeScript', 'Tailwind CSS', 'Expo', 'React Native'],
     repository: 'https://github.com/GuilhermeZalla/react-saldoa-app',
     website: 'https://saldoa-app.duckdns.org',
-    androidApp: 'https://github.com/GuilhermeZalla/react-saldoa-app/releases/tag/mobile-v1.0.0-preview.1',
+    androidApp: 'https://github.com/GuilhermeZalla/react-saldoa-app/releases/tag/v1.1.0',
     demo: null,
     image: '/projects/saldoa-home.svg', preview: '/projects/saldoa-portfolio-cover.svg',
     category: { en: 'Personal finance', pt: 'Finanças pessoais' },

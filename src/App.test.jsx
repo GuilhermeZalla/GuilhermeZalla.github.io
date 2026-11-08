@@ -38,7 +38,7 @@ test('shows Saldoa website and Android preview links on the card and case study'
   expect(within(saldoaCard).getByRole('list', { name: 'Saldoa stack' }).textContent).toContain('React Native');
   expect(within(saldoaCard).getByRole('list', { name: 'Saldoa stack' }).textContent).toContain('Expo');
   expect(screen.getByRole('link', { name: /Visit website/ }).getAttribute('href')).toBe('https://saldoa-app.duckdns.org');
-  expect(screen.getByRole('link', { name: /Android app preview/ }).getAttribute('href')).toBe('https://github.com/GuilhermeZalla/react-saldoa-app/releases/tag/mobile-v1.0.0-preview.1');
+  expect(screen.getByRole('link', { name: /Android app preview/ }).getAttribute('href')).toBe('https://github.com/GuilhermeZalla/react-saldoa-app/releases/tag/v1.1.0');
 
   fireEvent.click(screen.getAllByRole('link', { name: 'Read case study' })[0]);
   expect(await screen.findByRole('heading', { name: 'Saldoa', level: 1 })).toBeTruthy();
@@ -48,7 +48,7 @@ test('shows Saldoa website and Android preview links on the card and case study'
   expect(screen.getByText(/Email delivery for password recovery and account-deletion confirmation is not yet configured/)).toBeTruthy();
   expect(screen.getByText('Laravel · Sanctum · React · Inertia · TypeScript · Tailwind CSS · Expo · React Native')).toBeTruthy();
   expect(screen.getByRole('link', { name: /Visit website/ }).getAttribute('href')).toBe('https://saldoa-app.duckdns.org');
-  expect(screen.getByRole('link', { name: /Android app preview/ }).getAttribute('href')).toBe('https://github.com/GuilhermeZalla/react-saldoa-app/releases/tag/mobile-v1.0.0-preview.1');
+  expect(screen.getByRole('link', { name: /Android app preview/ }).getAttribute('href')).toBe('https://github.com/GuilhermeZalla/react-saldoa-app/releases/tag/v1.1.0');
 
   fireEvent.click(screen.getByRole('button', { name: 'PT', exact: true }));
   expect(await screen.findByText('Web 2025 · App 2026')).toBeTruthy();
@@ -56,7 +56,7 @@ test('shows Saldoa website and Android preview links on the card and case study'
   expect(screen.getByText(/assinada com chave de depuração, ainda sem distribuição pela Google Play/)).toBeTruthy();
   expect(screen.getByText(/envio de e-mails para recuperação de senha e confirmação da exclusão da conta ainda não está configurado/)).toBeTruthy();
   expect(await screen.findByRole('link', { name: /Acessar site/ })).toBeTruthy();
-  expect(screen.getByRole('link', { name: /App Android \(prévia\)/ }).getAttribute('href')).toBe('https://github.com/GuilhermeZalla/react-saldoa-app/releases/tag/mobile-v1.0.0-preview.1');
+  expect(screen.getByRole('link', { name: /App Android \(prévia\)/ }).getAttribute('href')).toBe('https://github.com/GuilhermeZalla/react-saldoa-app/releases/tag/v1.1.0');
 });
 
 test('changes the complete interface and document language to Portuguese and saves the choice', async () => {
