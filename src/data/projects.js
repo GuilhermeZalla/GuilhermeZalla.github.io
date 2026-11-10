@@ -3,7 +3,7 @@ export const projects = [
   {
     id: 'saldoa', name: 'Saldoa', year: 2025, yearLabel: { en: '2025 web · 2026 app', pt: 'Web 2025 · App 2026' }, featured: true,
     type: ['app'],
-    languages: ['pt'],
+    languages: ['pt', 'en'],
     stack: ['Laravel', 'Sanctum', 'React', 'Inertia', 'TypeScript', 'Tailwind CSS', 'Expo', 'React Native'],
     repository: 'https://github.com/GuilhermeZalla/react-saldoa-app',
     website: 'https://saldoa-app.duckdns.org',

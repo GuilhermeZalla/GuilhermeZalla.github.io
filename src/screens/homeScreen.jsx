@@ -57,9 +57,7 @@ export function HomeScreen() {
         </section>
 
         <Reveal as="section" className="section about-section" id="about" tabIndex="-1" aria-labelledby="about-title">
-          <div><p className="eyebrow">{t('about.label')}</p><h2 id="about-title">{t('about.title')}</h2><p>{t('about.body')}</p>
-            <div className="actions"><a className="button" href={profile.curriculumUrl} download>{t('about.resume')} <span aria-hidden="true">↓</span></a></div>
-          </div>
+          <div><p className="eyebrow">{t('about.label')}</p><h2 id="about-title">{t('about.title')}</h2><p>{t('about.body')}</p></div>
           <img className="portrait" src={profile.portraitUrl} width="210" height="210" alt="Guilherme Zalla" loading="lazy" decoding="async" />
         </Reveal>
 
