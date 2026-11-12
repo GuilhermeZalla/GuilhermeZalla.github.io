@@ -48,9 +48,9 @@ export default function CaseStudyScreen() {
           {project.androidApp && <a className="button" href={project.androidApp}>{t('projects.androidPreview')} ↗</a>}
           {project.demo && <a className="button primary" href={project.demo}>{t('projects.demo')} ↗</a>}
         </div>
-        <figure className={`case-visual${project.id === 'saldoa' ? ' case-visual--full-image' : ''}`}>
+        <figure className={`case-visual${project.id === 'saldoa' ? ' case-visual--full-image' : project.id === 'taskflow' ? ' case-visual--wide-image' : ''}`}>
           <a className="case-image-link" href={project.image} target="_blank" rel="noreferrer" aria-label={`${t('case.fullImage')}: ${project.name}`}>
-            <img src={project.image} alt={t('projects.imageAlt', { name: project.name })} width={project.id === 'saldoa' ? '1920' : '1440'} height={project.id === 'saldoa' ? '1080' : '1000'} decoding="async" />
+            <img src={project.image} alt={t('projects.imageAlt', { name: project.name })} width={project.id === 'saldoa' ? '1920' : project.id === 'taskflow' ? '1280' : '1440'} height={project.id === 'saldoa' ? '1080' : project.id === 'taskflow' ? '720' : '1000'} decoding="async" />
           </a>
           <figcaption><span>{project.name} · {project.category[language]}</span><a href={project.image} target="_blank" rel="noreferrer">{t('case.fullImage')} ↗</a></figcaption>
         </figure>

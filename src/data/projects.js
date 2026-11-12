@@ -17,6 +17,20 @@ export const projects = [
     },
   },
   {
+    id: 'taskflow', name: 'TaskFlow', year: 2026, yearLabel: { en: '2026 web', pt: 'Web 2026' }, featured: true,
+    type: ['spa'],
+    languages: ['pt', 'en'],
+    stack: ['C#', 'ASP.NET Core', 'MySQL', 'React', 'TypeScript', 'Vite', 'Tailwind CSS'],
+    repository: 'https://github.com/GuilhermeZalla/taskflow',
+    demo: null,
+    image: '/projects/taskflow-home.webp', preview: '/projects/taskflow-preview.webp',
+    category: { en: 'Project management', pt: 'Gestão de projetos' },
+    description: {
+      en: 'A collaborative web workspace for projects and tasks. Organize workspaces, priorities, owners, deadlines and progress, with a React frontend and a C# ASP.NET Core API backed by MySQL.',
+      pt: 'Um espaço web colaborativo para projetos e tarefas. Organize espaços, prioridades, responsáveis, prazos e progresso, com frontend React e API em C# com ASP.NET Core e MySQL.',
+    },
+  },
+  {
     id: 'pixelrank', name: 'PixelRank', year: 2026, featured: true,
     type: ['entertainment'],
     languages: ['pt', 'en'],

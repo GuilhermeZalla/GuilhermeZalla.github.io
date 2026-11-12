@@ -1,3 +1,12 @@
+# Status — 12/11/2026
+
+## TaskFlow incluído entre os projetos em destaque
+
+- Ordem dos três destaques: Saldoa em primeiro, TaskFlow em segundo e PixelRank em terceiro.
+- Adicionadas a capa do TaskFlow em 16:11 e a imagem horizontal do estudo de caso em 16:9, seguindo as proporções das capas Saldoa; ambos os arquivos são WebP locais.
+- Página de estudo de caso bilíngue, baseada no README e no status do projeto; link do GitHub configurado e sem demo hospedada declarada.
+- As alterações de currículo que já estavam no diretório antes desta etapa foram preservadas. Sem commit ou publicação nesta atualização.
+
 # Status — 05/11/2026
 
 ## Capa do Saldoa responsiva — 05/11/2026

@@ -22,6 +22,27 @@ export const caseStudies = {
       }, limitation: { en: 'The website is publicly available. The Android APK is an ARM64 pre-release signed with a debug key, not distributed through Google Play. Email delivery for password recovery and account-deletion confirmation is not yet configured.', pt: 'O site está disponível publicamente. O APK Android é uma prévia para ARM64 assinada com chave de depuração, ainda sem distribuição pela Google Play. O envio de e-mails para recuperação de senha e confirmação da exclusão da conta ainda não está configurado.' } },
     ],
   },
+  taskflow: {
+    subtitle: { en: 'A collaborative workspace for projects and tasks.', pt: 'Um espaço colaborativo para projetos e tarefas.' },
+    sections: [
+      { id: 'problem', title: { en: 'Keeping shared work in view.', pt: 'Manter o trabalho compartilhado à vista.' }, body: {
+        en: 'TaskFlow brings workspaces, projects and task tracking together so a team can follow priorities, owners, deadlines and progress from one place.',
+        pt: 'O TaskFlow reúne espaços, projetos e tarefas para que a equipe acompanhe prioridades, responsáveis, prazos e progresso em um só lugar.',
+      } },
+      { id: 'decisions', title: { en: 'A React client and a C# API.', pt: 'Cliente React e API em C#.' }, body: {
+        en: 'The interface uses React and TypeScript. A C# API built with ASP.NET Core handles authentication and application requests; Entity Framework Core persists data in MySQL. The repository separates domain, application, infrastructure and API responsibilities.',
+        pt: 'A interface usa React e TypeScript. Uma API em C# com ASP.NET Core cuida da autenticação e das requisições; o Entity Framework Core persiste os dados no MySQL. O repositório separa as responsabilidades de domínio, aplicação, infraestrutura e API.',
+      } },
+      { id: 'challenges', title: { en: 'Keeping collaboration and demo data distinct.', pt: 'Separar colaboração real dos dados de demonstração.' }, body: {
+        en: 'The browser demo uses fictional data stored locally, while authenticated work uses the API and MySQL. Server-side access rules protect workspace data, and task dependencies are checked to prevent cycles.',
+        pt: 'A demonstração no navegador usa dados fictícios salvos localmente; o uso autenticado passa pela API e pelo MySQL. Regras no servidor protegem os dados dos espaços, e dependências entre tarefas são verificadas para evitar ciclos.',
+      } },
+      { id: 'result', title: { en: 'Planning, tracking and collaboration in one web app.', pt: 'Planejamento, acompanhamento e colaboração em uma aplicação web.' }, body: {
+        en: 'The application includes workspaces, projects, task lists and boards, a calendar, comments and mentions, internal notifications, CSV reports, labels, dependencies and project templates. Its interface is available in Portuguese and English.',
+        pt: 'A aplicação inclui espaços, projetos, tarefas em lista e quadro, calendário, comentários e menções, notificações internas, relatórios CSV, etiquetas, dependências e modelos de projeto. A interface está disponível em português e inglês.',
+      }, limitation: { en: 'Version 1.0.0 is published on GitHub for local setup; there is no hosted demo. Account confirmation and password recovery by email, email invitations and external notifications are planned for version 1.1.', pt: 'A versão 1.0.0 está publicada no GitHub para execução local; não há demonstração hospedada. Confirmação e recuperação de conta por e-mail, convites e notificações externas estão planejados para a versão 1.1.' } },
+    ],
+  },
   pixelrank: {
     subtitle: { en: 'Game reviews with a community around them.', pt: 'Avaliações de jogos com uma comunidade ao redor.' },
     sections: [

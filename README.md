@@ -124,13 +124,14 @@ Abra o endereço informado pelo preview, normalmente `http://localhost:4173`. O 
 
 ## Interface e navegação
 
-A Home segue a ordem: apresentação, projetos em destaque, sobre, tecnologias e contato. Saldoa e PixelRank têm cartões maiores; Sneakers Store e MoviesLib aparecem em uma grade complementar.
+A Home segue a ordem: apresentação, projetos em destaque, sobre, tecnologias e contato. Saldoa, TaskFlow e PixelRank têm cartões maiores, nessa ordem; Sneakers Store e MoviesLib aparecem em uma grade complementar.
 
-Os quatro estudos de caso explicam problema, decisões técnicas, desafios e resultado, com índice navegável, stack, ano, repositório e captura do projeto. O conteúdo foi escrito a partir das descrições fornecidas e dos documentos dos próprios projetos, sem inventar métricas ou experiências pessoais. Fontes e limites estão em [docs/CASE_STUDIES.md](docs/CASE_STUDIES.md).
+Os cinco estudos de caso explicam problema, decisões técnicas, desafios e resultado, com índice navegável, stack, ano, repositório e captura do projeto. O conteúdo foi escrito a partir das descrições fornecidas e dos documentos dos próprios projetos, sem inventar métricas ou experiências pessoais. Fontes e limites estão em [docs/CASE_STUDIES.md](docs/CASE_STUDIES.md).
 
 | Projeto | Ano | Página local |
 | --- | --- | --- |
 | Saldoa | 2025 | `/#/projects/saldoa` |
+| TaskFlow | 2026 | `/#/projects/taskflow` |
 | PixelRank | 2026 | `/#/projects/pixelrank` |
 | Sneakers Store | 2024 | `/#/projects/sneakers` |
 | MoviesLib | 2026 | `/#/projects/movieslib` |
@@ -160,7 +161,7 @@ A foto atual é colorida e local. O currículo é importado de `docs/curriculo/C
 ## Fluxo de demonstração
 
 1. Apresente a Home e a proposta profissional.
-2. Abra Saldoa ou PixelRank em “Ver estudo de caso” e mostre o problema, as decisões técnicas e as limitações.
+2. Abra Saldoa, TaskFlow ou PixelRank em “Ver estudo de caso” e mostre o problema, as decisões técnicas e as limitações.
 3. Volte à Home e troque o idioma e o tema no cabeçalho.
 4. Mostre a navegação no celular, o download do currículo e os canais de contato.
 
@@ -181,9 +182,9 @@ npm.cmd run build
 node scripts/verify-browser.mjs
 ```
 
-Os **oito testes de componentes** cobrem seleção de projetos, contatos/currículo, idioma, tema, compatibilidade de rotas e abertura dos quatro estudos. Foram executados novamente para esta atualização, junto ao build de produção.
+Os testes de componentes cobrem seleção de projetos, contatos/currículo, idioma, tema, compatibilidade de rotas e abertura dos cinco estudos. Foram executados novamente para esta atualização, junto ao build de produção.
 
-O script de navegador exige **Microsoft Edge instalado** (`channel: msedge`). Confere a Home em 360, 390, 768 e 1440 px nos dois idiomas e temas, além dos quatro estudos em 390/1440 px em EN/claro e PT/escuro. Inclui axe WCAG A/AA, URLs diretas, atualização da página, foco, menus, preferências, currículo e movimento reduzido. Usa um servidor temporário para `dist/`, sem publicar o site. Relatório: [docs/site-verification.json](docs/site-verification.json).
+O script de navegador exige **Microsoft Edge instalado** (`channel: msedge`). Confere a Home em 360, 390, 768 e 1440 px nos dois idiomas e temas, além dos cinco estudos em 390/1440 px em EN/claro e PT/escuro. Inclui axe WCAG A/AA, URLs diretas, atualização da página, foco, menus, preferências, currículo e movimento reduzido. Usa um servidor temporário para `dist/`, sem publicar o site. Relatório: [docs/site-verification.json](docs/site-verification.json).
 
 Para medir desempenho localmente:
 

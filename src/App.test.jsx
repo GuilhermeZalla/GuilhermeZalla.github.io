@@ -15,16 +15,17 @@ beforeEach(async () => {
 });
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); });
 
-test('shows the four supplied projects in the approved order, with verified links', () => {
+test('shows the five supplied projects in the approved order, with verified links', () => {
   const { container } = render(<App />);
   expect(screen.getByText(/web applications with React and mobile apps with React Native/)).toBeTruthy();
   expect(container.querySelector('.stack-list').textContent).toContain('React Native');
   for (const image of container.querySelectorAll('.project-cover img')) {
     expect(existsSync(resolve('public', image.getAttribute('src').slice(1)))).toBe(true);
   }
-  expect(screen.getAllByRole('article').map(article => article.querySelector('h3').textContent)).toEqual(['Saldoa', 'PixelRank', 'Sneakers Store', 'MoviesLib']);
+  expect(screen.getAllByRole('article').map(article => article.querySelector('h3').textContent)).toEqual(['Saldoa', 'TaskFlow', 'PixelRank', 'Sneakers Store', 'MoviesLib']);
+  expect([...container.querySelectorAll('.projects-section .project h3')].map(heading => heading.textContent)).toEqual(['Saldoa', 'TaskFlow', 'PixelRank']);
   expect(screen.queryByText('[SALDOA_REPO]')).toBeNull();
-  expect(screen.getAllByRole('link', { name: 'Read case study' })).toHaveLength(4);
+  expect(screen.getAllByRole('link', { name: 'Read case study' })).toHaveLength(5);
   expect(screen.getAllByRole('link', { name: /Email/ })[0].getAttribute('href')).toBe('mailto:zallaguilherme@gmail.com');
   expect(screen.queryByRole('link', { name: /Logos|Banners/ })).toBeNull();
   expect(screen.getAllByRole('link', { name: /Download résumé/ })[0].getAttribute('href')).toMatch(/\.pdf(?:\?|$)/);
@@ -95,7 +96,7 @@ test('keeps old portfolio URLs usable and closes the contact panel with Escape',
   expect(document.activeElement).toBe(disclosure.querySelector('summary'));
 });
 
-test.each([['saldoa', 'Saldoa'], ['pixelrank', 'PixelRank'], ['sneakers', 'Sneakers Store'], ['movieslib', 'MoviesLib']])('opens the %s case study directly, with a static local image and translated sections', async (slug, name) => {
+test.each([['saldoa', 'Saldoa'], ['taskflow', 'TaskFlow'], ['pixelrank', 'PixelRank'], ['sneakers', 'Sneakers Store'], ['movieslib', 'MoviesLib']])('opens the %s case study directly, with a static local image and translated sections', async (slug, name) => {
   window.location.hash = `#/projects/${slug}`;
   const { container } = render(<App />);
   expect(await screen.findByRole('heading', { name, level: 1 })).toBeTruthy();

@@ -7,7 +7,7 @@ export function ProjectCard({ project, index, compact = false }) {
   const language = i18n.resolvedLanguage === 'pt' ? 'pt' : 'en';
   return (
     <Reveal as="article" className={compact || !project.featured ? 'small-project' : 'project'} aria-labelledby={`project-${project.id}`}>
-      <figure className={`project-cover${project.image ? ' has-image' : ''}${project.id === 'saldoa' ? ' project-cover--full-image' : ''}`}>
+      <figure className={`project-cover${project.image ? ' has-image' : ''}${project.id === 'saldoa' || project.id === 'taskflow' ? ' project-cover--full-image' : ''}`}>
         {project.image ? <img src={project.preview ?? project.image} alt={t('projects.imageAlt', { name: project.name })} width="720" height="500" loading="lazy" decoding="async" /> : <>
           <div><div className="cover-name">{project.name}</div><div className="cover-type">{project.category[language]} · {project.stack.slice(0, 2).join(' / ')}</div></div>
           <div className="cover-slot"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="5" width="24" height="22" rx="2" /><circle cx="11" cy="12" r="2" /><path d="m5 23 8-7 5 4 5-8 5 11" /></svg><span>{t('projects.preview')}</span><span>{t('projects.imagePending')}</span></div>
