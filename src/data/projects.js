@@ -48,8 +48,8 @@ export const projects = [
     type: ['ecommerce'],
     languages: ['pt', 'en'],
     stack: ['Laravel', 'React', 'TypeScript', 'React Router', 'Sanctum', 'Pest'],
-    repository: 'https://github.com/GuilhermeZalla/sneakers-store', demo: null,
-    image: '/projects/sneakers-home.webp', preview: '/projects/sneakers-preview.webp',
+    repository: 'https://github.com/GuilhermeZalla/sneakers-store', demo: 'https://guilhermezalla.github.io/sneakers-store/',
+    image: '/projects/sneakers-home.svg', preview: '/projects/sneakers-portfolio-cover.svg',
     category: { en: 'E-commerce', pt: 'E-commerce' },
     description: {
       en: 'An online store with a Laravel API and a React interface. Includes a product catalog, favorites, cart, addresses and order history, with a simulated checkout that does not charge real money. Supports Portuguese/BRL and English/USD.',

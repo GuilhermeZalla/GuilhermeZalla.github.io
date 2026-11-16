@@ -60,15 +60,15 @@ test('shows Saldoa website and Android preview links on the card and case study'
   expect(screen.getByRole('link', { name: /App Android \(prévia\)/ }).getAttribute('href')).toBe('https://github.com/GuilhermeZalla/react-saldoa-app/releases/tag/v1.1.0');
 });
 
-test('links TaskFlow demo and repository from its card and case study', async () => {
+test.each([['taskflow', 'TaskFlow', 'taskflow-platform'], ['sneakers', 'Sneakers Store', 'sneakers-store']])('links the %s demo from its card and case study in both languages', async (slug, name, repository) => {
   render(<App />);
-  const taskflowCard = screen.getAllByRole('article').find(article => article.querySelector('h3').textContent === 'TaskFlow');
-  const demoUrl = 'https://guilhermezalla.github.io/taskflow-platform/';
+  const taskflowCard = screen.getAllByRole('article').find(article => article.querySelector('h3').textContent === name);
+  const demoUrl = `https://guilhermezalla.github.io/${repository}/`;
   expect(within(taskflowCard).getByRole('link', { name: 'Live demo' }).getAttribute('href')).toBe(demoUrl);
-  expect(within(taskflowCard).getByRole('link', { name: 'Repository' }).getAttribute('href')).toBe('https://github.com/GuilhermeZalla/taskflow-platform');
+  expect(within(taskflowCard).getByRole('link', { name: 'Repository' }).getAttribute('href')).toBe(`https://github.com/GuilhermeZalla/${repository}`);
 
   fireEvent.click(within(taskflowCard).getByRole('link', { name: 'Read case study' }));
-  expect(await screen.findByRole('heading', { name: 'TaskFlow', level: 1 })).toBeTruthy();
+  expect(await screen.findByRole('heading', { name, level: 1 })).toBeTruthy();
   expect(screen.getByRole('link', { name: /Live demo/ }).getAttribute('href')).toBe(demoUrl);
   expect(screen.getByText(/public demo runs only the frontend with fictional data/)).toBeTruthy();
 

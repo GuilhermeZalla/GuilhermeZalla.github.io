@@ -144,3 +144,12 @@ Na etapa 1, foram verificados build de produção, três testes de componentes e
 - Relatório atual: site-verification.json. Capturas do React: verification/.
 - Lighthouse: relatórios mobile/desktop em performance/, medidos sobre build local com throttling simulado. A hospedagem pública pode produzir resultados diferentes.
 - Resultado final do Lighthouse: desempenho 95 no mobile e 100 no desktop; acessibilidade, boas práticas e SEO 100 nos dois perfis. CLS medido: 0. Detalhes em performance/summary.json e nos relatórios HTML.
+
+
+## Sneakers demo and portfolio covers — 16/11/2026
+
+- Added the public Sneakers demo link to its project card and case study, using the existing EN/PT labels.
+- Replaced the Sneakers previews with the 1920 × 1320 and 1920 × 1080 SVG compositions from the 1.0.0 release. Both use real screenshots of the responsive website.
+- Applied the existing full-image treatment used by Saldoa, avoiding internal padding or cropping of the covers.
+- Updated the case study to explain the browser-only demo and future hosting of the Laravel/MySQL application.
+- Preserved the featured project order: Saldoa, TaskFlow and PixelRank.

@@ -80,9 +80,9 @@ export const caseStudies = {
         pt: 'A resposta do checkout pode se perder mesmo após uma operação ser processada. O fluxo documentado mantém uma chave de idempotência e os dados da tentativa no sessionStorage, permitindo repetir a confirmação. O histórico preserva a moeda registrada no pedido.',
       } },
       { id: 'result', title: { en: 'A demonstrable shopping flow.', pt: 'Um fluxo de compra demonstrável.' }, body: {
-        en: 'The application connects browsing, account features and order history, with automated tests documented in the repository. The screenshots use demonstration records in an isolated database.',
-        pt: 'A aplicação conecta navegação pelo catálogo, recursos da conta e histórico de pedidos, com testes automatizados documentados no repositório. As capturas usam registros de demonstração em um banco isolado.',
-      }, limitation: { en: 'Wallet payments are simulated: no real money is charged. This independent project is not affiliated with the brands shown.', pt: 'Os pagamentos por Wallet são simulados: não há cobrança real. O projeto independente não tem vínculo com as marcas exibidas.' } },
+        en: 'The application connects browsing, account features and order history. The public demo runs only the frontend with fictional data stored in the browser session, so visitors can explore favorites, cart and simulated checkout without registering. The portfolio covers use real screenshots of the responsive website.',
+        pt: 'A aplicação conecta navegação pelo catálogo, recursos da conta e histórico de pedidos. A demonstração pública executa apenas o frontend com dados fictícios na sessão do navegador, permitindo explorar favoritos, carrinho e checkout simulado sem cadastro. As capas do portfólio usam capturas reais do site responsivo.',
+      }, limitation: { en: 'Wallet payments are simulated: no real money is charged. The public demo sends no emails and needs no API or database. Hosting the full Laravel/MySQL application remains future work. This independent project is not affiliated with the brands shown.', pt: 'Os pagamentos por Wallet são simulados: não há cobrança real. A demo pública não envia e-mails e dispensa API e banco. A hospedagem completa com Laravel/MySQL fica para o futuro. O projeto independente não tem vínculo com as marcas exibidas.' } },
     ],
   },
   movieslib: {
