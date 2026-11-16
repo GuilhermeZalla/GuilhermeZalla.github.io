@@ -47,7 +47,7 @@ export const projects = [
     id: 'sneakers', name: 'Sneakers Store', year: 2024, featured: false,
     type: ['ecommerce'],
     languages: ['pt', 'en'],
-    stack: ['Laravel', 'React', 'TypeScript', 'React Router', 'Sanctum', 'Pest'],
+    stack: ['Laravel', 'React', 'TypeScript', 'React Router', 'MySQL', 'Sanctum', 'Pest'],
     repository: 'https://github.com/GuilhermeZalla/sneakers-store', demo: 'https://guilhermezalla.github.io/sneakers-store/',
     image: '/projects/sneakers-home.svg', preview: '/projects/sneakers-portfolio-cover.svg',
     category: { en: 'E-commerce', pt: 'E-commerce' },
