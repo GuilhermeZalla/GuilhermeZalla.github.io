@@ -153,3 +153,4 @@ Na etapa 1, foram verificados build de produção, três testes de componentes e
 - Applied the existing full-image treatment used by Saldoa, avoiding internal padding or cropping of the covers.
 - Updated the case study to explain the browser-only demo and future hosting of the Laravel/MySQL application.
 - Preserved the featured project order: Saldoa, TaskFlow and PixelRank.
+- Compact Sneakers cards use the horizontal 16:9 composition to match their container and eliminate side bands without cropping the cover.
