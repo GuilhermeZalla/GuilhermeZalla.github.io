@@ -1,3 +1,10 @@
+# Status — 16/11/2026
+
+## Demonstração pública do TaskFlow no portfólio
+
+- O cartão e o estudo de caso apontam para o frontend de demonstração no GitHub Pages; o link do repositório foi corrigido para `taskflow-platform`.
+- O texto bilíngue explica que os dados da demo são fictícios e locais ao navegador e que a API e o MySQL não estão hospedados publicamente.
+
 # Status — 12/11/2026
 
 ## TaskFlow incluído entre os projetos em destaque

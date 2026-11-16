@@ -40,7 +40,7 @@ export const caseStudies = {
       { id: 'result', title: { en: 'Planning, tracking and collaboration in one web app.', pt: 'Planejamento, acompanhamento e colaboração em uma aplicação web.' }, body: {
         en: 'The application includes workspaces, projects, task lists and boards, a calendar, comments and mentions, internal notifications, CSV reports, labels, dependencies and project templates. Its interface is available in Portuguese and English.',
         pt: 'A aplicação inclui espaços, projetos, tarefas em lista e quadro, calendário, comentários e menções, notificações internas, relatórios CSV, etiquetas, dependências e modelos de projeto. A interface está disponível em português e inglês.',
-      }, limitation: { en: 'Version 1.0.0 is published on GitHub for local setup; there is no hosted demo. Account confirmation and password recovery by email, email invitations and external notifications are planned for version 1.1.', pt: 'A versão 1.0.0 está publicada no GitHub para execução local; não há demonstração hospedada. Confirmação e recuperação de conta por e-mail, convites e notificações externas estão planejados para a versão 1.1.' } },
+      }, limitation: { en: 'The public demo runs only the frontend with fictional data stored in the browser. Authentication, email delivery and shared data require running the API and MySQL locally; the full stack is not publicly hosted.', pt: 'A demonstração pública executa apenas o frontend com dados fictícios salvos no navegador. Autenticação, envio de e-mails e dados compartilhados exigem a API e o MySQL em execução local; o sistema completo não está hospedado publicamente.' } },
     ],
   },
   pixelrank: {

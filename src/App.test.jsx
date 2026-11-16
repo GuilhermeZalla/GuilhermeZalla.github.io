@@ -60,6 +60,23 @@ test('shows Saldoa website and Android preview links on the card and case study'
   expect(screen.getByRole('link', { name: /App Android \(prévia\)/ }).getAttribute('href')).toBe('https://github.com/GuilhermeZalla/react-saldoa-app/releases/tag/v1.1.0');
 });
 
+test('links TaskFlow demo and repository from its card and case study', async () => {
+  render(<App />);
+  const taskflowCard = screen.getAllByRole('article').find(article => article.querySelector('h3').textContent === 'TaskFlow');
+  const demoUrl = 'https://guilhermezalla.github.io/taskflow-platform/';
+  expect(within(taskflowCard).getByRole('link', { name: 'Live demo' }).getAttribute('href')).toBe(demoUrl);
+  expect(within(taskflowCard).getByRole('link', { name: 'Repository' }).getAttribute('href')).toBe('https://github.com/GuilhermeZalla/taskflow-platform');
+
+  fireEvent.click(within(taskflowCard).getByRole('link', { name: 'Read case study' }));
+  expect(await screen.findByRole('heading', { name: 'TaskFlow', level: 1 })).toBeTruthy();
+  expect(screen.getByRole('link', { name: /Live demo/ }).getAttribute('href')).toBe(demoUrl);
+  expect(screen.getByText(/public demo runs only the frontend with fictional data/)).toBeTruthy();
+
+  fireEvent.click(screen.getByRole('button', { name: 'PT', exact: true }));
+  expect(await screen.findByRole('link', { name: /Ver demo/ })).toBeTruthy();
+  expect(screen.getByText(/demonstração pública executa apenas o frontend/)).toBeTruthy();
+});
+
 test('changes the complete interface and document language to Portuguese and saves the choice', async () => {
   render(<App />);
   fireEvent.click(screen.getByRole('button', { name: 'PT', exact: true }));

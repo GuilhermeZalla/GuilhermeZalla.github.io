@@ -21,8 +21,8 @@ export const projects = [
     type: ['spa'],
     languages: ['pt', 'en'],
     stack: ['C#', 'ASP.NET Core', 'MySQL', 'React', 'TypeScript', 'Vite', 'Tailwind CSS'],
-    repository: 'https://github.com/GuilhermeZalla/taskflow',
-    demo: null,
+    repository: 'https://github.com/GuilhermeZalla/taskflow-platform',
+    demo: 'https://guilhermezalla.github.io/taskflow-platform/',
     image: '/projects/taskflow-home.webp', preview: '/projects/taskflow-preview.webp',
     category: { en: 'Project management', pt: 'Gestão de projetos' },
     description: {

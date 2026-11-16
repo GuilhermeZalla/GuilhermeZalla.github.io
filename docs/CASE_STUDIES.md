@@ -9,7 +9,7 @@ Um estudo de caso explica, de forma curta, o que o projeto resolve e como foi co
 - Anos usados: Saldoa (2025), TaskFlow (2026, versão 1.0.0), PixelRank (2026), Sneakers Store (2024) e MoviesLib (2026).
 - Imagens reais fornecidas pelo usuário, guardadas localmente. Saldoa usa um quadro estático do GIF, com uma versão PNG preservada e WebP para entrega.
 - Contatos confirmados, nova foto local e currículo atual em docs/curriculo/Curriculo_Guilherme_Zalla_PT-BR.pdf.
-- Descrições documentadas nos READMEs e status dos respectivos projetos; o estudo do TaskFlow registra explicitamente que não há demonstração hospedada.
+- Descrições documentadas nos READMEs e status dos respectivos projetos; o estudo do TaskFlow distingue a demonstração pública do frontend da execução local do sistema completo.
 
 ## Conteúdo publicado nesta etapa
 
@@ -18,7 +18,7 @@ Cada página tem quatro seções: problema, decisões técnicas, desafios e resu
 | Projeto | Foco do estudo | Limite explicitado |
 | --- | --- | --- |
 | Saldoa | Laravel/Inertia/React na Web e React Native/Expo no Android, validação e isolamento dos registros financeiros | Site público; APK Android ARM64 de prévia, ainda sem publicação na Play Store |
-| TaskFlow | React/TypeScript com API em C# e ASP.NET Core, persistência MySQL | Versão 1.0.0 para execução local; confirmação/recuperação por e-mail, convites e notificações externas planejados para 1.1 |
+| TaskFlow | React/TypeScript com API em C# e ASP.NET Core, persistência MySQL | Demo pública apenas do frontend, com dados fictícios no navegador; sistema completo depende de API e MySQL locais |
 | PixelRank | Blade/Alpine, Policies e tratamento de falhas do IGDB | Novas avaliações dependem do IGDB configurado; sem notificações por WebSocket |
 | Sneakers Store | API Laravel + React, sessão Sanctum e repetição idempotente do checkout | Pagamentos simulados, sem cobrança real ou associação às marcas |
 | MoviesLib | Proxy do TMDB, TanStack Query, Zod e descoberta sem cadastro | Lista local sem sincronização; trailers, não filmes completos; filtros por título limitados à página recebida |
@@ -29,7 +29,7 @@ O Saldoa tem versão Web finalizada em 2025 e app Android adicionado em 2026, co
 
 - [Saldoa — README](https://github.com/GuilhermeZalla/react-saldoa-app/blob/main/README.md): descrição, arquitetura Laravel/Inertia, Form Requests e Policies.
 - [Saldoa — status](https://github.com/GuilhermeZalla/react-saldoa-app/blob/main/docs/STATUS.md): confirmação atual do isolamento por usuário e das metas mensais.
-- [TaskFlow — README](https://github.com/GuilhermeZalla/taskflow/blob/main/README.md) e [status](https://github.com/GuilhermeZalla/taskflow/blob/main/status.md): stack, funcionalidades, versão local e pendências da 1.1.
+- [TaskFlow — README](https://github.com/GuilhermeZalla/taskflow-platform/blob/main/README.md) e [status](https://github.com/GuilhermeZalla/taskflow-platform/blob/main/status.md): stack, funcionalidades, demo pública do frontend e execução local do sistema completo.
 - [PixelRank — README](https://github.com/GuilhermeZalla/pixel-rank-app/blob/main/README.md): decisões técnicas, serviço IGDB, comentários, testes e limites.
 - [Sneakers Store — README](https://github.com/GuilhermeZalla/sneakers-store/blob/main/README.md): autenticação, interface, idempotência e pagamentos simulados.
 - [MoviesLib — README](https://github.com/GuilhermeZalla/react-movieslib/blob/main/README.md): funcionalidades, proxy, consultas, validação de respostas e limites.

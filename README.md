@@ -136,6 +136,8 @@ Os cinco estudos de caso explicam problema, decisões técnicas, desafios e resu
 | Sneakers Store | 2024 | `/#/projects/sneakers` |
 | MoviesLib | 2026 | `/#/projects/movieslib` |
 
+O cartão e o estudo de caso do TaskFlow oferecem acesso à [demonstração pública do frontend](https://guilhermezalla.github.io/taskflow-platform/), que usa dados fictícios no navegador. A API e o MySQL são necessários para executar o sistema completo localmente.
+
 As rotas `/#/projects`, `/#/about`, `/#/stack` e `/#/contact` levam às seções da Home. Os antigos endereços `/#/portfolio/...` continuam levando aos projetos. O uso de hash permite abrir e atualizar uma página interna em uma hospedagem estática sem regras de reescrita no servidor.
 
 ## Idiomas, temas e acessibilidade
