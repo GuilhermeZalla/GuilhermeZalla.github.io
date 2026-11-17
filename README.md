@@ -133,7 +133,7 @@ Os cinco estudos de caso explicam problema, decisões técnicas, desafios e resu
 | Saldoa | 2025 | `/#/projects/saldoa` |
 | TaskFlow | 2026 | `/#/projects/taskflow` |
 | PixelRank | 2026 | `/#/projects/pixelrank` |
-| Sneakers Store | 2024 | `/#/projects/sneakers` |
+| Sneakers Store | 2026 | `/#/projects/sneakers` |
 | MoviesLib | 2026 | `/#/projects/movieslib` |
 
 O cartão e o estudo de caso do TaskFlow oferecem acesso à [demonstração pública do frontend](https://guilhermezalla.github.io/taskflow-platform/), que usa dados fictícios no navegador. A API e o MySQL são necessários para executar o sistema completo localmente.
