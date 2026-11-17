@@ -159,3 +159,8 @@ Na etapa 1, foram verificados build de produção, três testes de componentes e
 ### Sneakers — marca editorial (17/11/2026)
 
 - Atualizadas as capas `sneakers-home.svg` (1920 × 1080) e `sneakers-portfolio-cover.svg` (1920 × 1320), com a assinatura `sneakers.` e capturas reais atuais de desktop/celular. Composição e dimensões preservadas; sem alterar a ordem dos projetos em destaque.
+
+
+### Destaques da Home — 17/11/2026
+
+- Sneakers Store e PixelRank trocaram de posição entre os destaques e os demais projetos. Destaques: Saldoa, TaskFlow e Sneakers Store, nessa ordem. PixelRank continua disponível nos demais projetos.

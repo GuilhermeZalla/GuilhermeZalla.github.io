@@ -31,7 +31,7 @@ export const projects = [
     },
   },
   {
-    id: 'pixelrank', name: 'PixelRank', year: 2026, featured: true,
+    id: 'pixelrank', name: 'PixelRank', year: 2026, featured: false,
     type: ['entertainment'],
     languages: ['pt', 'en'],
     stack: ['Laravel', 'Blade', 'Tailwind CSS', 'Alpine.js', 'MySQL/SQLite', 'Pest'],
@@ -44,7 +44,7 @@ export const projects = [
     },
   },
   {
-    id: 'sneakers', name: 'Sneakers Store', year: 2024, featured: false,
+    id: 'sneakers', name: 'Sneakers Store', year: 2024, featured: true,
     type: ['ecommerce'],
     languages: ['pt', 'en'],
     stack: ['Laravel', 'React', 'TypeScript', 'React Router', 'MySQL', 'Sanctum', 'Pest'],
