@@ -49,9 +49,9 @@ export function HomeScreen() {
 
         <section className="section projects-section" id="projects" tabIndex="-1" aria-labelledby="projects-title">
           <Reveal className="section-heading"><h2 id="projects-title">{t('projects.title')}</h2><span className="eyebrow">01 — {String(projects.length).padStart(2, '0')}</span></Reveal>
-          {projects.filter(project => project.featured).map(project => <ProjectCard key={project.id} project={project} index={projects.indexOf(project)} />)}
+          {projects.filter(project => project.featured).map((project, index) => <ProjectCard key={project.id} project={project} index={index} />)}
           <div className="other-projects">
-            {projects.filter(project => !project.featured).map(project => <ProjectCard key={project.id} project={project} index={projects.indexOf(project)} />)}
+            {projects.filter(project => !project.featured).map((project, index) => <ProjectCard key={project.id} project={project} index={projects.filter(item => item.featured).length + index} />)}
           </div>
           <div className="actions"><Link to="/projects/all" className="button">{t('projects.viewAll')} <span aria-hidden="true">↗</span></Link></div>
         </section>

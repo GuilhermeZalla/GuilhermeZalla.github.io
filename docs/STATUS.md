@@ -164,3 +164,5 @@ Na etapa 1, foram verificados build de produção, três testes de componentes e
 ### Destaques da Home — 17/11/2026
 
 - Sneakers Store e PixelRank trocaram de posição entre os destaques e os demais projetos. Destaques: Saldoa, TaskFlow e Sneakers Store, nessa ordem. PixelRank continua disponível nos demais projetos.
+
+- Corrigida a numeração da Home para acompanhar a ordem visual: destaques 01/02/03, demais projetos 04/05, independente da posição no catálogo.
