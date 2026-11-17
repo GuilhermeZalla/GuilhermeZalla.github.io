@@ -154,3 +154,8 @@ Na etapa 1, foram verificados build de produção, três testes de componentes e
 - Updated the case study to explain the browser-only demo and future hosting of the Laravel/MySQL application.
 - Preserved the featured project order: Saldoa, TaskFlow and PixelRank.
 - Compact Sneakers cards use the horizontal 16:9 composition to match their container and eliminate side bands without cropping the cover.
+
+
+### Sneakers — marca editorial (17/11/2026)
+
+- Atualizadas as capas `sneakers-home.svg` (1920 × 1080) e `sneakers-portfolio-cover.svg` (1920 × 1320), com a assinatura `sneakers.` e capturas reais atuais de desktop/celular. Composição e dimensões preservadas; sem alterar a ordem dos projetos em destaque.
