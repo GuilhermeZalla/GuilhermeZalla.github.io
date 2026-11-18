@@ -72,8 +72,8 @@ export const caseStudies = {
         "pt": "A aplicação web em português e inglês reúne acompanhamento de projetos, quadros com arraste, checklists, comentários e menções, etiquetas, dependências, calendário, relatórios CSV e modelos. O sistema completo também oferece confirmação de e-mail, recuperação de senha, convites e notificações por e-mail mediante configuração de envio. A demo inclui projeto concluído e tarefas com colaboração; Carregar exemplos acrescenta registros fictícios ausentes sem sobrescrever edições."
       },
       "limitation": {
-        "en": "The public demo is frontend-only, with fictional data stored in the browser. Authentication, email delivery and shared data require the API and MySQL; full-stack hosting is pending. Manual card order is a browser preference, not synchronized between people or devices. Team chat remains future work.",
-        "pt": "A demo pública executa apenas o frontend, com dados fictícios no navegador. Autenticação, envio de e-mails e dados compartilhados dependem da API e do MySQL; a hospedagem completa está pendente. A ordem manual dos cards é uma preferência do navegador, sem sincronização entre pessoas ou dispositivos. O chat da equipe fica para uma etapa futura."
+        "en": "The public demo is frontend-only, with fictional data stored in the browser. Authentication, email delivery and shared data require the API and MySQL; full-stack hosting is pending. Manual card order is a browser preference, not synchronized between people or devices.",
+        "pt": "A demo pública executa apenas o frontend, com dados fictícios no navegador. Autenticação, envio de e-mails e dados compartilhados dependem da API e do MySQL; a hospedagem completa está pendente. A ordem manual dos cards é uma preferência do navegador, sem sincronização entre pessoas ou dispositivos."
       }
     }
   ]
