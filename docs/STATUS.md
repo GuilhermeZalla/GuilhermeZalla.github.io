@@ -166,3 +166,12 @@ Na etapa 1, foram verificados build de produção, três testes de componentes e
 - Sneakers Store e PixelRank trocaram de posição entre os destaques e os demais projetos. Destaques: Saldoa, TaskFlow e Sneakers Store, nessa ordem. PixelRank continua disponível nos demais projetos.
 
 - Corrigida a numeração da Home para acompanhar a ordem visual: destaques 01/02/03, demais projetos 04/05, independente da posição no catálogo.
+
+
+## Estudos TaskFlow e Sneakers — 18/11/2026
+
+- Revisados os quatro blocos dos dois estudos em pt/en para refletir as funcionalidades atuais e os limites das demos. Descrições resumidas dos cards alinhadas aos estudos.
+- Preservados layout, capas, stacks, anos, links e destaques Saldoa/TaskFlow/Sneakers. Teste de ordem da Home atualizado: ainda esperava a posição anterior do PixelRank, embora o site já exibisse Sneakers como terceiro destaque.
+- Hospedagem completa e pagamentos reais do Sneakers permanecem pendentes; chat e hospedagem do TaskFlow permanecem futuros.
+
+Validação desta atualização: 12 testes de conteúdo, navegação e idioma aprovados; build de produção e diff sem erros. Publicação pelo comando existente para a branch gh-pages; código-fonte mantido na main.

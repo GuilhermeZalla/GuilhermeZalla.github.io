@@ -22,8 +22,8 @@ test('shows the five supplied projects in the approved order, with verified link
   for (const image of container.querySelectorAll('.project-cover img')) {
     expect(existsSync(resolve('public', image.getAttribute('src').slice(1)))).toBe(true);
   }
-  expect(screen.getAllByRole('article').map(article => article.querySelector('h3').textContent)).toEqual(['Saldoa', 'TaskFlow', 'PixelRank', 'Sneakers Store', 'MoviesLib']);
-  expect([...container.querySelectorAll('.projects-section .project h3')].map(heading => heading.textContent)).toEqual(['Saldoa', 'TaskFlow', 'PixelRank']);
+  expect(screen.getAllByRole('article').map(article => article.querySelector('h3').textContent)).toEqual(['Saldoa', 'TaskFlow', 'Sneakers Store', 'PixelRank', 'MoviesLib']);
+  expect([...container.querySelectorAll('.projects-section .project h3')].map(heading => heading.textContent)).toEqual(['Saldoa', 'TaskFlow', 'Sneakers Store']);
   expect(screen.queryByText('[SALDOA_REPO]')).toBeNull();
   expect(screen.getAllByRole('link', { name: 'Read case study' })).toHaveLength(5);
   expect(screen.getAllByRole('link', { name: /Email/ })[0].getAttribute('href')).toBe('mailto:zallaguilherme@gmail.com');
@@ -70,11 +70,13 @@ test.each([['taskflow', 'TaskFlow', 'taskflow-platform'], ['sneakers', 'Sneakers
   fireEvent.click(within(taskflowCard).getByRole('link', { name: 'Read case study' }));
   expect(await screen.findByRole('heading', { name, level: 1 })).toBeTruthy();
   expect(screen.getByRole('link', { name: /Live demo/ }).getAttribute('href')).toBe(demoUrl);
-  expect(screen.getByText(/public demo runs only the frontend with fictional data/)).toBeTruthy();
+  expect(document.querySelector('.case-limit').textContent).toMatch(slug === 'taskflow' ? /frontend-only.*fictional data stored in the browser/ : /browser session.*reviews are not shared/);
+  expect(screen.getByText(slug === 'taskflow' ? /restore the previous state if the save fails/ : /arithmetic mean of submitted scores/)).toBeTruthy();
 
   fireEvent.click(screen.getByRole('button', { name: 'PT', exact: true }));
   expect(await screen.findByRole('link', { name: /Ver demo/ })).toBeTruthy();
-  expect(screen.getByText(/demonstração pública executa apenas o frontend/)).toBeTruthy();
+  expect(document.querySelector('.case-limit').textContent).toMatch(slug === 'taskflow' ? /demo pública executa apenas o frontend/ : /sessão do navegador.*avaliações não são compartilhadas/);
+  expect(screen.getByText(slug === 'taskflow' ? /restaura o estado anterior se o salvamento falhar/ : /média aritmética das notas enviadas/)).toBeTruthy();
 });
 
 test('changes the complete interface and document language to Portuguese and saves the choice', async () => {

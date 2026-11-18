@@ -26,8 +26,8 @@ export const projects = [
     image: '/projects/taskflow-home.webp', preview: '/projects/taskflow-preview.webp',
     category: { en: 'Project management', pt: 'Gestão de projetos' },
     description: {
-      en: 'A collaborative web workspace for projects and tasks. Organize workspaces, priorities, owners, deadlines and progress, with a React frontend and a C# ASP.NET Core API backed by MySQL.',
-      pt: 'Um espaço web colaborativo para projetos e tarefas. Organize espaços, prioridades, responsáveis, prazos e progresso, com frontend React e API em C# com ASP.NET Core e MySQL.',
+      en: 'A web workspace with draggable task boards, checklists, personal/team overviews and project tracking. Built with React and a C# ASP.NET Core API backed by MySQL; the public demo uses fictional browser-local data.',
+      pt: 'Um espaço web com quadros de tarefas por arraste, checklists, visão pessoal/da equipe e acompanhamento de projetos. Usa React e API em C# com ASP.NET Core e MySQL; a demo pública utiliza dados fictícios no navegador.',
     },
   },
   {
@@ -52,8 +52,8 @@ export const projects = [
     image: '/projects/sneakers-home.svg', preview: '/projects/sneakers-portfolio-cover.svg',
     category: { en: 'E-commerce', pt: 'E-commerce' },
     description: {
-      en: 'An online store with a Laravel API and a React interface. Includes a product catalog, favorites, cart, addresses and order history, with a simulated checkout that does not charge real money. Supports Portuguese/BRL and English/USD.',
-      pt: 'Uma loja online com API Laravel e interface React. Reúne catálogo, favoritos, carrinho, endereços e histórico de pedidos, com checkout simulado, sem cobrança real. Oferece português/BRL e inglês/USD.',
+      en: 'An online store with a Laravel API and React interface, product reviews, size/color variants, image zoom and mobile filters. Includes favorites, cart, addresses and simulated checkout, with Portuguese/BRL and English/USD support.',
+      pt: 'Uma loja online com API Laravel e interface React, avaliações, variantes de tamanho/cor, zoom de imagens e filtros mobile. Reúne favoritos, carrinho, endereços e checkout simulado, com português/BRL e inglês/USD.',
     },
   },
   {

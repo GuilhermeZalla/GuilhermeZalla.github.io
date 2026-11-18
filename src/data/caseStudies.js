@@ -23,26 +23,61 @@ export const caseStudies = {
     ],
   },
   taskflow: {
-    subtitle: { en: 'A collaborative workspace for projects and tasks.', pt: 'Um espaço colaborativo para projetos e tarefas.' },
-    sections: [
-      { id: 'problem', title: { en: 'Keeping shared work in view.', pt: 'Manter o trabalho compartilhado à vista.' }, body: {
-        en: 'TaskFlow brings workspaces, projects and task tracking together so a team can follow priorities, owners, deadlines and progress from one place.',
-        pt: 'O TaskFlow reúne espaços, projetos e tarefas para que a equipe acompanhe prioridades, responsáveis, prazos e progresso em um só lugar.',
-      } },
-      { id: 'decisions', title: { en: 'A React client and a C# API.', pt: 'Cliente React e API em C#.' }, body: {
-        en: 'The interface uses React and TypeScript. A C# API built with ASP.NET Core handles authentication and application requests; Entity Framework Core persists data in MySQL. The repository separates domain, application, infrastructure and API responsibilities.',
-        pt: 'A interface usa React e TypeScript. Uma API em C# com ASP.NET Core cuida da autenticação e das requisições; o Entity Framework Core persiste os dados no MySQL. O repositório separa as responsabilidades de domínio, aplicação, infraestrutura e API.',
-      } },
-      { id: 'challenges', title: { en: 'Keeping collaboration and demo data distinct.', pt: 'Separar colaboração real dos dados de demonstração.' }, body: {
-        en: 'The browser demo uses fictional data stored locally, while authenticated work uses the API and MySQL. Server-side access rules protect workspace data, and task dependencies are checked to prevent cycles.',
-        pt: 'A demonstração no navegador usa dados fictícios salvos localmente; o uso autenticado passa pela API e pelo MySQL. Regras no servidor protegem os dados dos espaços, e dependências entre tarefas são verificadas para evitar ciclos.',
-      } },
-      { id: 'result', title: { en: 'Planning, tracking and collaboration in one web app.', pt: 'Planejamento, acompanhamento e colaboração em uma aplicação web.' }, body: {
-        en: 'The application includes workspaces, projects, task lists and boards, a calendar, comments and mentions, internal notifications, CSV reports, labels, dependencies and project templates. Its interface is available in Portuguese and English.',
-        pt: 'A aplicação inclui espaços, projetos, tarefas em lista e quadro, calendário, comentários e menções, notificações internas, relatórios CSV, etiquetas, dependências e modelos de projeto. A interface está disponível em português e inglês.',
-      }, limitation: { en: 'The public demo runs only the frontend with fictional data stored in the browser. Authentication, email delivery and shared data require running the API and MySQL locally; the full stack is not publicly hosted.', pt: 'A demonstração pública executa apenas o frontend com dados fictícios salvos no navegador. Autenticação, envio de e-mails e dados compartilhados exigem a API e o MySQL em execução local; o sistema completo não está hospedado publicamente.' } },
-    ],
+  "subtitle": {
+    "en": "Projects, tasks and the next step in one workspace.",
+    "pt": "Projetos, tarefas e o próximo passo em um só espaço."
   },
+  "sections": [
+    {
+      "id": "problem",
+      "title": {
+        "en": "Knowing what needs attention next.",
+        "pt": "Saber o que precisa de atenção agora."
+      },
+      "body": {
+        "en": "TaskFlow connects workspaces, projects and tasks so people can follow owners, priorities and deadlines. The overview separates My work from Whole team and groups open tasks into overdue, today, upcoming and undated sections. A project page brings its objective, dates, task progress and workspace team together.",
+        "pt": "O TaskFlow conecta espaços, projetos e tarefas para acompanhar responsáveis, prioridades e prazos. A visão geral separa Meu trabalho de Toda a equipe e agrupa tarefas em atrasadas, hoje, próximos dias e sem prazo. Uma página de projeto reúne objetivo, datas, progresso das tarefas e equipe do espaço."
+      }
+    },
+    {
+      "id": "decisions",
+      "title": {
+        "en": "A React workspace backed by a C# API.",
+        "pt": "Um espaço React conectado a uma API em C#."
+      },
+      "body": {
+        "en": "React and TypeScript provide list and board views, removable filters and a task side panel organized into Details, Checklist, Comments and Organization. The ASP.NET Core API handles authentication and access rules, with MySQL persistence. The repository separates domain, application, infrastructure and API responsibilities. Demo and API-connected modes share the same interface components.",
+        "pt": "React e TypeScript oferecem lista e quadro, filtros removíveis e um painel lateral organizado em Detalhes, Checklist, Comentários e Organização. A API ASP.NET Core cuida da autenticação e das regras de acesso, com persistência em MySQL. O repositório separa domínio, aplicação, infraestrutura e API. A demo e o modo conectado à API compartilham os mesmos componentes de interface."
+      }
+    },
+    {
+      "id": "challenges",
+      "title": {
+        "en": "Moving work without losing context.",
+        "pt": "Mover o trabalho sem perder o contexto."
+      },
+      "body": {
+        "en": "Tasks can move between stages by dragging, keyboard or a status selector. Stage changes update optimistically and restore the previous state if the save fails. The task panel preserves unsaved details while switching sections or updating a checklist. Card indicators use real comment, label and checklist data; server-side dependency checks prevent cycles.",
+        "pt": "As tarefas mudam de etapa por arraste, teclado ou seletor de status. A interface atualiza a etapa de imediato e restaura o estado anterior se o salvamento falhar. O painel preserva os detalhes não salvos ao alternar seções ou atualizar o checklist. Os indicadores dos cards usam comentários, etiquetas e subtarefas reais; o servidor verifica dependências para impedir ciclos."
+      }
+    },
+    {
+      "id": "result",
+      "title": {
+        "en": "An interactive project management demo.",
+        "pt": "Uma demonstração interativa de gestão de projetos."
+      },
+      "body": {
+        "en": "The Portuguese/English web application includes project overviews, draggable boards, checklists, comments and mentions, labels, dependencies, calendar, CSV reports and templates. The full application also supports email confirmation, password recovery, invitations and opt-in email notifications when email delivery is configured. Demo examples include a completed project and tasks with collaboration data; Load examples adds missing sample records without overwriting edits.",
+        "pt": "A aplicação web em português e inglês reúne acompanhamento de projetos, quadros com arraste, checklists, comentários e menções, etiquetas, dependências, calendário, relatórios CSV e modelos. O sistema completo também oferece confirmação de e-mail, recuperação de senha, convites e notificações por e-mail mediante configuração de envio. A demo inclui projeto concluído e tarefas com colaboração; Carregar exemplos acrescenta registros fictícios ausentes sem sobrescrever edições."
+      },
+      "limitation": {
+        "en": "The public demo is frontend-only, with fictional data stored in the browser. Authentication, email delivery and shared data require the API and MySQL; full-stack hosting is pending. Manual card order is a browser preference, not synchronized between people or devices. Team chat remains future work.",
+        "pt": "A demo pública executa apenas o frontend, com dados fictícios no navegador. Autenticação, envio de e-mails e dados compartilhados dependem da API e do MySQL; a hospedagem completa está pendente. A ordem manual dos cards é uma preferência do navegador, sem sincronização entre pessoas ou dispositivos. O chat da equipe fica para uma etapa futura."
+      }
+    }
+  ]
+},
   pixelrank: {
     subtitle: { en: 'Game reviews with a community around them.', pt: 'Avaliações de jogos com uma comunidade ao redor.' },
     sections: [
@@ -65,26 +100,61 @@ export const caseStudies = {
     ],
   },
   sneakers: {
-    subtitle: { en: 'A storefront backed by a Laravel API.', pt: 'Uma loja conectada a uma API Laravel.' },
-    sections: [
-      { id: 'problem', title: { en: 'Connecting the shopping journey.', pt: 'Conectar a jornada de compra.' }, body: {
-        en: 'Sneakers Store brings product discovery, favorites, cart, addresses and orders into one shopping flow. It is an independent study project with a React interface and a Laravel API, rather than a live commercial store.',
-        pt: 'O Sneakers Store reúne descoberta de produtos, favoritos, carrinho, endereços e pedidos em um fluxo de compra. É um projeto de estudo independente com interface React e API Laravel, em vez de uma loja comercial em operação.',
-      } },
-      { id: 'decisions', title: { en: 'An API and a separate React interface.', pt: 'API e interface React separadas.' }, body: {
-        en: 'Laravel exposes the application API, while React Router organizes the interface. Sanctum uses session cookies and CSRF protection. Catalog filters stay in the URL, and the language selector links Portuguese to BRL and English to USD.',
-        pt: 'O Laravel expõe a API da aplicação, enquanto o React Router organiza a interface. O Sanctum usa cookies de sessão e proteção CSRF. Os filtros do catálogo ficam na URL, e o seletor de idioma vincula português a BRL e inglês a USD.',
-      } },
-      { id: 'challenges', title: { en: 'Making checkout retries predictable.', pt: 'Tornar as novas tentativas de checkout previsíveis.' }, body: {
-        en: 'A checkout response can be lost even after an operation is processed. The documented flow keeps an idempotency key and pending attempt data in sessionStorage, allowing confirmation to be retried. Order history retains the currency recorded with the order.',
-        pt: 'A resposta do checkout pode se perder mesmo após uma operação ser processada. O fluxo documentado mantém uma chave de idempotência e os dados da tentativa no sessionStorage, permitindo repetir a confirmação. O histórico preserva a moeda registrada no pedido.',
-      } },
-      { id: 'result', title: { en: 'A demonstrable shopping flow.', pt: 'Um fluxo de compra demonstrável.' }, body: {
-        en: 'The application connects browsing, account features and order history. The public demo runs only the frontend with fictional data stored in the browser session, so visitors can explore favorites, cart and simulated checkout without registering. The portfolio covers use real screenshots of the responsive website.',
-        pt: 'A aplicação conecta navegação pelo catálogo, recursos da conta e histórico de pedidos. A demonstração pública executa apenas o frontend com dados fictícios na sessão do navegador, permitindo explorar favoritos, carrinho e checkout simulado sem cadastro. As capas do portfólio usam capturas reais do site responsivo.',
-      }, limitation: { en: 'Wallet payments are simulated: no real money is charged. The public demo sends no emails and needs no API or database. Hosting the full Laravel/MySQL application remains future work. This independent project is not affiliated with the brands shown.', pt: 'Os pagamentos por Wallet são simulados: não há cobrança real. A demo pública não envia e-mails e dispensa API e banco. A hospedagem completa com Laravel/MySQL fica para o futuro. O projeto independente não tem vínculo com as marcas exibidas.' } },
-    ],
+  "subtitle": {
+    "en": "From product discovery to a simulated purchase.",
+    "pt": "Da descoberta do produto à compra simulada."
   },
+  "sections": [
+    {
+      "id": "problem",
+      "title": {
+        "en": "Making product choices part of the purchase.",
+        "pt": "Conectar a escolha do produto à compra."
+      },
+      "body": {
+        "en": "Sneakers Store brings browsing, product options, reviews, favorites, cart, addresses and orders into one shopping flow. Product pages offer image enlargement, related items and size/color selection. Mobile filters can be collapsed while search, sorting and removable active filters remain accessible. The interface supports Portuguese/BRL and English/USD.",
+        "pt": "O Sneakers Store reúne catálogo, opções de produto, avaliações, favoritos, carrinho, endereços e pedidos em um fluxo de compra. As páginas de produto oferecem ampliação de imagem, itens relacionados e escolha de tamanho/cor. No celular, os filtros podem ser recolhidos, mantendo busca, ordenação e filtros ativos removíveis acessíveis. A interface oferece português/BRL e inglês/USD."
+      }
+    },
+    {
+      "id": "decisions",
+      "title": {
+        "en": "Shared interface, separate API and demo data.",
+        "pt": "Interface compartilhada, API e dados da demo separados."
+      },
+      "body": {
+        "en": "Laravel exposes a REST API, while React Router handles interface navigation. Sanctum uses session cookies and CSRF protection. Prices and product options are validated on the server. The same React components serve the API-connected application and the standalone browser demo, including subtle filter transitions and confirmation feedback after a successful cart addition, with reduced-motion support.",
+        "pt": "O Laravel expõe uma API REST, enquanto o React Router organiza a navegação. O Sanctum usa cookies de sessão e proteção CSRF. Preços e opções de produto são validados no servidor. Os mesmos componentes React atendem o sistema conectado à API e a demo independente, incluindo transições discretas nos filtros e confirmação após inclusão bem-sucedida no carrinho, com suporte a movimento reduzido."
+      }
+    },
+    {
+      "id": "challenges",
+      "title": {
+        "en": "Keeping variants, reviews and checkout consistent.",
+        "pt": "Manter variantes, avaliações e checkout consistentes."
+      },
+      "body": {
+        "en": "Different sizes and colors remain separate cart lines and are saved in order snapshots. Each verified account can maintain one review per product; the displayed rating is the arithmetic mean of submitted scores, with a review count. Checkout retains an idempotency key and pending attempt data so a lost response can be retried without creating another order. Order history keeps the original currency and product information.",
+        "pt": "Tamanhos e cores diferentes permanecem em linhas separadas no carrinho e são preservados nos pedidos. Cada conta verificada pode manter uma avaliação por produto; a nota exibida é a média aritmética das notas enviadas, acompanhada da quantidade de avaliações. O checkout mantém uma chave de idempotência e os dados da tentativa para repetir uma confirmação sem criar outro pedido. O histórico preserva moeda e informações originais dos produtos."
+      }
+    },
+    {
+      "id": "result",
+      "title": {
+        "en": "A shopping flow visitors can explore.",
+        "pt": "Um fluxo de compra que o visitante pode explorar."
+      },
+      "body": {
+        "en": "The public demo lets visitors use a fictional account to browse products, select variants, manage favorites and addresses, write or edit reviews and complete simulated orders. The bag counts items; the bell updates after cart additions and supports marking notifications as read, removing one or clearing read notices. Buy now and the notification panel provide checkout shortcuts. Product and account flows adapt to desktop and mobile.",
+        "pt": "A demo pública permite usar uma conta fictícia para explorar produtos, escolher variantes, gerenciar favoritos e endereços, escrever ou editar avaliações e concluir pedidos simulados. A sacola conta os itens; o sino atualiza após inclusões no carrinho e permite marcar avisos como lidos, remover um ou limpar os já lidos. Comprar agora e o painel de notificações oferecem atalhos para o checkout. Os fluxos de produto e conta se adaptam ao desktop e ao celular."
+      },
+      "limitation": {
+        "en": "Payments and shipping are simulated, with no real charges, live shipping quotes or tracking. The demo stores data only in the browser session: reviews are not shared between visitors, and no emails are sent. Full Laravel/MySQL hosting and real payment integration remain pending. This independent portfolio project is not affiliated with the brands shown.",
+        "pt": "Pagamentos e frete são simulados, sem cobrança, cotação ou rastreamento reais. A demo guarda os dados apenas na sessão do navegador: avaliações não são compartilhadas entre visitantes e nenhum e-mail é enviado. A hospedagem completa com Laravel/MySQL e a integração de pagamentos reais continuam pendentes. O projeto independente de portfólio não tem vínculo com as marcas exibidas."
+      }
+    }
+  ]
+},
   movieslib: {
     subtitle: { en: 'Discover a film and save it for later.', pt: 'Descobrir um filme e guardar para depois.' },
     sections: [

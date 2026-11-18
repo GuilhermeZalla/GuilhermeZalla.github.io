@@ -39,7 +39,7 @@ As cópias consultadas dos demais repositórios estão em references/. O TaskFlo
 ## Ainda pode ser melhorado
 
 - Acrescentar um relato pessoal real sobre uma decisão ou dificuldade, se o autor desejar. A primeira versão já funciona sem inventar esses relatos.
-- O Saldoa oferece links para o site público e para a página de release da prévia Android. PixelRank, Sneakers Store e MoviesLib continuam sem demos públicas documentadas.
+- O Saldoa oferece links para o site público e para a página de release da prévia Android. TaskFlow e Sneakers Store também oferecem demos públicas do frontend. PixelRank e MoviesLib continuam sem links de demonstração publicados no portfólio.
 - Revisar os textos e fazer a conferência no GitHub Pages depois da publicação.
 - Next Game e Nova Geração ficam fora da Home por decisão do usuário, com os dados preservados para revisão futura.
 
@@ -53,3 +53,9 @@ O portfólio continua uma SPA estática com HashRouter. Os títulos e descriçõ
 - Nenhuma violação detectada pelo axe nas verificações automatizadas realizadas.
 - Lighthouse local: desempenho da Home 97 mobile / 100 desktop; estudo do Saldoa 96 mobile / 100 desktop. Acessibilidade, boas práticas e SEO 100 em ambos. As notas podem variar na hospedagem pública.
 - Relatórios em site-verification.json e performance/. Capturas atuais em verification/.
+
+## Atualização editorial — 18/11/2026
+
+- TaskFlow: quadro com arraste e alternativas acessíveis, checklist, filtros, painel por seções, escopo pessoal/equipe, página de acompanhamento de projeto e exemplos da demo. A ordem manual é local ao navegador; chat e hospedagem continuam futuros.
+- Sneakers: avaliações com média real e contagem, variantes, galeria/zoom, relacionados, filtros mobile, avisos de carrinho e limpeza das notificações. Pagamentos/frete continuam simulados e a demo não compartilha avaliações entre visitantes.
+- Textos conferidos nas cópias atuais dos repositórios locais e em seus README/status. Mesma estrutura de quatro seções, idiomas, imagens, links, anos e ordem visual preservados. Não foram reexecutadas suítes dos projetos de origem nesta revisão do portfólio.
