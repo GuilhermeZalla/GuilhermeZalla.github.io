@@ -103,6 +103,8 @@ p { color: var(--muted); }
 .other-projects { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; border-top: 1px solid var(--line); padding-top: 36px; }
 .small-project h3 { font-size: 24px; margin: 12px 0; }
 .small-project .project-cover { min-height: 0; aspect-ratio: 16 / 9; margin-bottom: 24px; }
+.small-project .project-cover--sniply { aspect-ratio: 1045 / 720; }
+.project-cover--sniply img { object-fit: cover; }
 .small-project .project-copy p { font-size: 14px; }
 .project-copy p.eyebrow { font-size: 12px; line-height: 1.5; }
 .small-project .project-links { margin-top: 20px; }
