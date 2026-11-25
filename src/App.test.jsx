@@ -15,17 +15,17 @@ beforeEach(async () => {
 });
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); });
 
-test('shows the five supplied projects in the approved order, with verified links', () => {
+test('shows six projects in the approved order, with verified links', () => {
   const { container } = render(<App />);
   expect(screen.getByText(/web applications with React and mobile apps with React Native/)).toBeTruthy();
   expect(container.querySelector('.stack-list').textContent).toContain('React Native');
   for (const image of container.querySelectorAll('.project-cover img')) {
     expect(existsSync(resolve('public', image.getAttribute('src').slice(1)))).toBe(true);
   }
-  expect(screen.getAllByRole('article').map(article => article.querySelector('h3').textContent)).toEqual(['Saldoa', 'TaskFlow', 'Sneakers Store', 'PixelRank', 'MoviesLib']);
+  expect(screen.getAllByRole('article').map(article => article.querySelector('h3').textContent)).toEqual(['Saldoa', 'TaskFlow', 'Sneakers Store', 'Sniply', 'PixelRank', 'MoviesLib']);
   expect([...container.querySelectorAll('.projects-section .project h3')].map(heading => heading.textContent)).toEqual(['Saldoa', 'TaskFlow', 'Sneakers Store']);
   expect(screen.queryByText('[SALDOA_REPO]')).toBeNull();
-  expect(screen.getAllByRole('link', { name: 'Read case study' })).toHaveLength(5);
+  expect(screen.getAllByRole('link', { name: 'Read case study' })).toHaveLength(6);
   expect(screen.getAllByRole('link', { name: /Email/ })[0].getAttribute('href')).toBe('mailto:zallaguilherme@gmail.com');
   expect(screen.queryByRole('link', { name: /Logos|Banners/ })).toBeNull();
   expect(screen.getAllByRole('link', { name: /Download résumé/ })[0].getAttribute('href')).toMatch(/\.pdf(?:\?|$)/);

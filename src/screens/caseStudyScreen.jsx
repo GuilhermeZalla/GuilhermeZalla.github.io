@@ -50,7 +50,7 @@ export default function CaseStudyScreen() {
         </div>
         <figure className={`case-visual${['saldoa', 'sneakers'].includes(project.id) ? ' case-visual--full-image' : project.id === 'taskflow' ? ' case-visual--wide-image' : ''}`}>
           <a className="case-image-link" href={project.image} target="_blank" rel="noreferrer" aria-label={`${t('case.fullImage')}: ${project.name}`}>
-            <img src={project.image} alt={t('projects.imageAlt', { name: project.name })} width={['saldoa', 'sneakers'].includes(project.id) ? '1920' : project.id === 'taskflow' ? '1280' : '1440'} height={['saldoa', 'sneakers'].includes(project.id) ? '1080' : project.id === 'taskflow' ? '720' : '1000'} decoding="async" />
+            <img src={project.image} alt={t('projects.imageAlt', { name: project.name })} width={['saldoa', 'sneakers'].includes(project.id) ? '1920' : ['taskflow', 'sniply'].includes(project.id) ? '1280' : '1440'} height={['saldoa', 'sneakers'].includes(project.id) ? '1080' : ['taskflow', 'sniply'].includes(project.id) ? '720' : '1000'} decoding="async" />
           </a>
           <figcaption><span>{project.name} · {project.category[language]}</span><a href={project.image} target="_blank" rel="noreferrer">{t('case.fullImage')} ↗</a></figcaption>
         </figure>

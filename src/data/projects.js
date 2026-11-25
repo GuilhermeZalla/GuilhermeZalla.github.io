@@ -31,6 +31,19 @@ export const projects = [
     },
   },
   {
+    id: 'sniply', name: 'Sniply', year: 2026, yearLabel: { en: '2024 concept · 2026 rebuild', pt: 'Conceito 2024 · reconstrução 2026' }, featured: false,
+    type: ['spa'],
+    languages: ['en'],
+    stack: ['React', 'TypeScript', 'Vite', 'ASP.NET Core', 'C#', 'PostgreSQL', 'Monaco Editor'],
+    repository: 'https://github.com/GuilhermeZalla/sniply', demo: 'https://guilhermezalla.github.io/sniply/',
+    image: '/projects/sniply-portfolio-home.webp', preview: '/projects/sniply-portfolio-preview.webp',
+    category: { en: 'Code library', pt: 'Biblioteca de código' },
+    description: {
+      en: 'A personal code library for saving, finding and organizing reusable snippets. The React interface uses Monaco; the full application has an ASP.NET Core API and PostgreSQL. Its public demo uses fictional data saved in the visitor’s browser.',
+      pt: 'Uma biblioteca pessoal para guardar, encontrar e organizar trechos de código. A interface React usa Monaco; a aplicação completa tem API ASP.NET Core e PostgreSQL. A demo pública usa dados fictícios salvos no navegador do visitante.',
+    },
+  },
+  {
     id: 'pixelrank', name: 'PixelRank', year: 2026, featured: false,
     type: ['entertainment'],
     languages: ['pt', 'en'],

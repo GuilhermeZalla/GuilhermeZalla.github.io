@@ -176,4 +176,28 @@ export const caseStudies = {
       }, limitation: { en: 'The watchlist is local to the browser and does not sync across devices. The player offers trailers, not full movies.', pt: 'A lista fica neste navegador e não sincroniza entre dispositivos. O player oferece trailers, e não filmes completos.' } },
     ],
   },
+  sniply: {
+    subtitle: { en: 'Useful code, ready to find again.', pt: 'Código útil, fácil de encontrar depois.' },
+    sections: [
+      { id: 'problem', title: { en: 'Finding a solution again.', pt: 'Encontrar uma solução outra vez.' }, body: {
+        en: 'Small code solutions are easy to lose among files and conversations. Sniply keeps each snippet with a title, description, language and optional groups so it can be found later.',
+        pt: 'Pequenas soluções de código se perdem entre arquivos e conversas. O Sniply guarda cada trecho com título, descrição, linguagem e grupos opcionais para facilitar a busca posterior.',
+      } },
+      { id: 'decisions', title: { en: 'A focused library with a real API.', pt: 'Uma biblioteca direta com API própria.' }, body: {
+        en: 'React and TypeScript provide the workspace and Monaco code editor. The ASP.NET Core API handles accounts, search, ownership checks and persistence in PostgreSQL. The public demo replaces those services with fictional browser-local records.',
+        pt: 'React e TypeScript formam a interface com o editor Monaco. A API ASP.NET Core cuida das contas, da busca, das permissões e dos dados no PostgreSQL. A demo pública substitui esses serviços por registros fictícios no navegador.',
+      } },
+      { id: 'challenges', title: { en: 'Sharing without opening the library.', pt: 'Compartilhar sem abrir toda a biblioteca.' }, body: {
+        en: 'Snippets are private by default. An individual public link exposes only the chosen code and its basic metadata; the owner can revoke that link. The interface also separates the public demo clearly from real account actions.',
+        pt: 'Os trechos são privados por padrão. Um link público individual mostra apenas o código escolhido e seus dados básicos; o proprietário pode revogar o link. A interface também distingue a demo pública das ações de uma conta real.',
+      } },
+      { id: 'result', title: { en: 'A searchable, editable code collection.', pt: 'Uma coleção de código pesquisável e editável.' }, body: {
+        en: 'The local application supports snippet editing, search, favorites, collections, tags, categories, language preferences and revocable sharing. The demo lets visitors explore these interactions with sample data.',
+        pt: 'A aplicação local oferece edição de trechos, busca, favoritos, coleções, etiquetas, categorias, preferências de linguagem e compartilhamento revogável. A demo permite explorar essas interações com dados de exemplo.',
+      }, limitation: {
+        en: 'The public demo runs only in the browser. Accounts, email and synchronized data require the API and PostgreSQL; full-stack hosting is not yet configured. The project concept is dated 2024, while this implementation was reconstructed in 2026.',
+        pt: 'A demo pública funciona apenas no navegador. Contas, e-mail e sincronização dependem da API e do PostgreSQL; a hospedagem completa ainda não foi configurada. O conceito do projeto é de 2024, mas esta implementação foi reconstruída em 2026.',
+      } },
+    ],
+  },
 };
