@@ -60,7 +60,7 @@ test('shows Saldoa website and Android preview links on the card and case study'
   expect(screen.getByRole('link', { name: /App Android \(prévia\)/ }).getAttribute('href')).toBe('https://github.com/GuilhermeZalla/react-saldoa-app/releases/tag/v1.1.0');
 });
 
-test.each([['taskflow', 'TaskFlow', 'taskflow-platform'], ['sneakers', 'Sneakers Store', 'sneakers-store']])('links the %s demo from its card and case study in both languages', async (slug, name, repository) => {
+test.each([['taskflow', 'TaskFlow', 'taskflow-platform'], ['sneakers', 'Sneakers Store', 'sneakers-store'], ['sniply', 'Sniply', 'sniply']])('links the %s demo from its card and case study in both languages', async (slug, name, repository) => {
   render(<App />);
   const taskflowCard = screen.getAllByRole('article').find(article => article.querySelector('h3').textContent === name);
   const demoUrl = `https://guilhermezalla.github.io/${repository}/`;
@@ -70,13 +70,29 @@ test.each([['taskflow', 'TaskFlow', 'taskflow-platform'], ['sneakers', 'Sneakers
   fireEvent.click(within(taskflowCard).getByRole('link', { name: 'Read case study' }));
   expect(await screen.findByRole('heading', { name, level: 1 })).toBeTruthy();
   expect(screen.getByRole('link', { name: /Live demo/ }).getAttribute('href')).toBe(demoUrl);
-  expect(document.querySelector('.case-limit').textContent).toMatch(slug === 'taskflow' ? /frontend-only.*fictional data stored in the browser/ : /browser session.*reviews are not shared/);
-  expect(screen.getByText(slug === 'taskflow' ? /restore the previous state if the save fails/ : /arithmetic mean of submitted scores/)).toBeTruthy();
+  if (slug === 'taskflow') {
+    expect(document.querySelector('.case-limit').textContent).toMatch(/frontend-only.*fictional data stored in the browser/);
+    expect(screen.getByText(/restore the previous state if the save fails/)).toBeTruthy();
+  } else if (slug === 'sneakers') {
+    expect(document.querySelector('.case-limit').textContent).toMatch(/browser session.*reviews are not shared/);
+    expect(screen.getByText(/arithmetic mean of submitted scores/)).toBeTruthy();
+  } else {
+    expect(document.querySelector('.case-limit').textContent).toMatch(/public demo runs only in the browser/);
+    expect(screen.getByText(/public link exposes only the chosen code/)).toBeTruthy();
+  }
 
   fireEvent.click(screen.getByRole('button', { name: 'PT', exact: true }));
   expect(await screen.findByRole('link', { name: /Ver demo/ })).toBeTruthy();
-  expect(document.querySelector('.case-limit').textContent).toMatch(slug === 'taskflow' ? /demo pública executa apenas o frontend/ : /sessão do navegador.*avaliações não são compartilhadas/);
-  expect(screen.getByText(slug === 'taskflow' ? /restaura o estado anterior se o salvamento falhar/ : /média aritmética das notas enviadas/)).toBeTruthy();
+  if (slug === 'taskflow') {
+    expect(document.querySelector('.case-limit').textContent).toMatch(/demo pública executa apenas o frontend/);
+    expect(screen.getByText(/restaura o estado anterior se o salvamento falhar/)).toBeTruthy();
+  } else if (slug === 'sneakers') {
+    expect(document.querySelector('.case-limit').textContent).toMatch(/sessão do navegador.*avaliações não são compartilhadas/);
+    expect(screen.getByText(/média aritmética das notas enviadas/)).toBeTruthy();
+  } else {
+    expect(document.querySelector('.case-limit').textContent).toMatch(/demo pública funciona apenas no navegador/);
+    expect(screen.getByText(/link público individual mostra apenas o código escolhido/)).toBeTruthy();
+  }
 });
 
 test('changes the complete interface and document language to Portuguese and saves the choice', async () => {
@@ -115,7 +131,7 @@ test('keeps old portfolio URLs usable and closes the contact panel with Escape',
   expect(document.activeElement).toBe(disclosure.querySelector('summary'));
 });
 
-test.each([['saldoa', 'Saldoa'], ['taskflow', 'TaskFlow'], ['pixelrank', 'PixelRank'], ['sneakers', 'Sneakers Store'], ['movieslib', 'MoviesLib']])('opens the %s case study directly, with a static local image and translated sections', async (slug, name) => {
+test.each([['saldoa', 'Saldoa'], ['taskflow', 'TaskFlow'], ['pixelrank', 'PixelRank'], ['sneakers', 'Sneakers Store'], ['movieslib', 'MoviesLib'], ['sniply', 'Sniply']])('opens the %s case study directly, with a static local image and translated sections', async (slug, name) => {
   window.location.hash = `#/projects/${slug}`;
   const { container } = render(<App />);
   expect(await screen.findByRole('heading', { name, level: 1 })).toBeTruthy();
