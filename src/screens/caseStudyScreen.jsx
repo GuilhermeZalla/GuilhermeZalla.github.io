@@ -48,7 +48,7 @@ export default function CaseStudyScreen() {
           {project.androidApp && <a className="button" href={project.androidApp}>{t('projects.androidPreview')} ↗</a>}
           {project.demo && <a className="button primary" href={project.demo}>{t('projects.demo')} ↗</a>}
         </div>
-        <figure className={`case-visual${['saldoa', 'sneakers'].includes(project.id) ? ' case-visual--full-image' : project.id === 'taskflow' ? ' case-visual--wide-image' : ''}`}>
+        <figure className={`case-visual${['saldoa', 'sneakers'].includes(project.id) ? ' case-visual--full-image' : ['taskflow', 'sniply'].includes(project.id) ? ' case-visual--wide-image' : project.id === 'sniply' ? ' case-visual--sniply' : ''}`}>
           <a className="case-image-link" href={project.image} target="_blank" rel="noreferrer" aria-label={`${t('case.fullImage')}: ${project.name}`}>
             <img src={project.image} alt={t('projects.imageAlt', { name: project.name })} width={['saldoa', 'sneakers'].includes(project.id) ? '1920' : ['taskflow', 'sniply'].includes(project.id) ? '1280' : '1440'} height={['saldoa', 'sneakers'].includes(project.id) ? '1080' : ['taskflow', 'sniply'].includes(project.id) ? '720' : '1000'} decoding="async" />
           </a>
