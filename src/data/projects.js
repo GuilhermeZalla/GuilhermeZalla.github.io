@@ -36,7 +36,7 @@ export const projects = [
     languages: ['en'],
     stack: ['React', 'TypeScript', 'Vite', 'ASP.NET Core', 'C#', 'PostgreSQL', 'Monaco Editor'],
     repository: 'https://github.com/GuilhermeZalla/sniply', demo: 'https://guilhermezalla.github.io/sniply/',
-    image: '/projects/sniply-portfolio-home.webp', preview: '/projects/sniply-portfolio-preview.webp',
+    image: '/projects/sniply-portfolio-home.svg', preview: '/projects/sniply-portfolio-preview.svg',
     category: { en: 'Code library', pt: 'Biblioteca de código' },
     description: {
       en: 'A personal code library for saving, finding and organizing reusable snippets. The React interface uses Monaco; the full application has an ASP.NET Core API and PostgreSQL. Its public demo uses fictional data saved in the visitor’s browser.',
